@@ -2,6 +2,7 @@
 
 :root {
     --navHt    : 70px;
+    --widthPage: 1100px;
     --purple   : #303F9F; 
     --indigo   : #3F51B5; 
     --lgPurple : #C5CAE9;
@@ -40,6 +41,13 @@ body * {
 
 .page{
     margin-top: var(--navHt);
+    overflow: hidden;
+}
+
+.shadow{
+    -webkit-box-shadow: 3px 4px 10px 1px #000000;
+    box-shadow: 3px 4px 10px 1px #000000;
+
 }
 
 
@@ -94,54 +102,31 @@ body * {
     background-color: var(--mainGreen);
 }
 
+/* pages */
 
-/* info despliegue - cartas */
-
-.info-container{
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: normal;
+.starting-module{
+    margin: 0 auto;
+    width: var(--widthPage);
+    height: 600px;
+    margin-top: 70px;
     margin-bottom: 50px;
+    border-radius: 80px;
+    display:grid;
+    grid-template-columns: 50% 50%;
 }
 
-.info-display{
-    min-width: 400px;
-    padding: 50px 20px;
-    margin: 40px;
-    border-radius: 20px;
+.intro-text{
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
     flex-direction: column;
-    border: 1px  solid var(--darkGrey);
-    line-height : 10px;
-    align-items: center;
+    width: 200px;
+    max-width:80%;
 }
 
-.info-display p, h2{
-    margin: 10px;
+.intro-text h2{
+    color: var(--indigo);
 }
-/*
-.info-display-anomaly{
-    width: 450px;
-    height: 300px;
-    margin: 40px;
-    border-radius: 20px;
-    flex-direction: column;
-    border: 1px  solid var(--darkGrey);
-    align-items: center;
-}
-*/
-.info-display:hover h2{
-    color: white;
-}
-
-.info-display:hover{
-    background-color: var(--paleGreen);
-    color: white;
-}
-
-
-
 
 
 /* Menu centrado */

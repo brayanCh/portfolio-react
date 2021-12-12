@@ -1,13 +1,13 @@
+import Intro from "./intro"; 
+import PageContainer from "../components/pageContainer";
+
 
 const Home = () => {
 
     return (
-        <div className="page">
-            <div className="starting-module flexcenter">
-                <p>home</p>
-
-            </div>
-        </div>
+        <PageContainer>
+            <Intro />
+        </PageContainer>
     );
 }
 
