@@ -1,0 +1,250 @@
+/* global*/
+
+:root {
+    --navHt    : 70px;
+    --purple   : #303F9F; 
+    --indigo   : #3F51B5; 
+    --lgPurple : #C5CAE9;
+    --accent   : #7C4DFF; 
+    --text     : #212121;
+    --mGray    : #757575; 
+    --sGray    : #BDBDBD; 
+}
+
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+body * {
+      transition: 0.2s;
+}
+
+
+/* utils */
+
+.flexcenter{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.page{
+    margin-top: var(--navHt);
+}
+
+
+.page-container2{
+    margin: 0 auto;
+    background-color: var(--darkGrey);
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    overflow:hidden;
+}
+
+.columncontainer{
+    margin: 0 auto;
+    width: 1100px;
+    max-width: 85%;
+    flex-direction: column;
+    background-color: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.columncontainer form{
+    flex-direction: column;
+}
+
+.columncontainer h2{
+    margin: 70px;
+    color: var(--mainGreen);
+}
+
+.columncontainer p, input{
+    margin: 30px;
+}
+
+.columncontainer input {
+    border-radius: 20px;
+    border:1px solid;
+    text-align: center;
+}
+
+.submitbtn{
+    margin-top:40px;
+    margin-bottom: 80px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--paleGreen);
+    color: white;
+    border: 1px solid var(--paleGreen);
+}
+.submitbtn:hover{
+    border-color: var(--mainGreen);
+    background-color: var(--mainGreen);
+}
+
+
+/* info despliegue - cartas */
+
+.info-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: normal;
+    margin-bottom: 50px;
+}
+
+.info-display{
+    min-width: 400px;
+    padding: 50px 20px;
+    margin: 40px;
+    border-radius: 20px;
+    flex-direction: column;
+    border: 1px  solid var(--darkGrey);
+    line-height : 10px;
+    align-items: center;
+}
+
+.info-display p, h2{
+    margin: 10px;
+}
+/*
+.info-display-anomaly{
+    width: 450px;
+    height: 300px;
+    margin: 40px;
+    border-radius: 20px;
+    flex-direction: column;
+    border: 1px  solid var(--darkGrey);
+    align-items: center;
+}
+*/
+.info-display:hover h2{
+    color: white;
+}
+
+.info-display:hover{
+    background-color: var(--paleGreen);
+    color: white;
+}
+
+
+
+
+
+/* Menu centrado */
+
+.centered-menu{
+    background-color: var(--darkGrey);
+    color: white;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    width: 400px;
+    padding:  40px 0; 
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.up{
+    top: -50%;
+}
+
+.centered-menu h3{
+    margin-bottom: 30px;
+}
+
+.button-cont{
+    width: 300px;
+    display: grid;
+    grid-template-columns:33% 34% 33%;
+}
+
+.button-green{
+    margin-top:20px;
+    height: 40px;
+    background-color: var(--paleGreen);
+    border: 1px solid var(--darkGrey);
+    color: white;
+}
+
+.button-green a{
+    color:white;
+    text-decoration:none;
+}
+.button-green:hover a{
+    color:white;
+}
+
+.button-green:hover{
+    background-color: var(--mainGreen);
+}
+
+.btlf{
+    border-radius: 20px 0 0 20px; 
+}
+
+.btrg{
+    border-radius: 0 20px 20px 0; 
+}
+
+
+/* nav */
+
+
+
+.navbar{
+    position: fixed;
+    top: 0;
+    height: var(--navHt);
+    width: 100%;
+    background-color: var(--purple);
+    color: white;
+    display: grid;
+    align-items:center;
+    grid-template-columns: 50% 50%;
+    border-bottom: 1px solid black;
+    z-index: 4;
+}
+
+.navbar img{
+    margin-left: 5px;
+    height: 90%;
+    width: 60px;
+}
+
+.item-container{
+    display: flex;
+    align-items:center;
+    flex-direction: row-reverse;
+}
+.item-container p{
+    border-radius: 5px;
+    height:40px;
+    width: 100px;
+    margin: 0 18px 0 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+      
