@@ -1,17 +1,20 @@
+import bLogo from "../media/BPurple.png"
+
 const Intro = () => {
 
     return (
-            <div className="starting-module flexcenter shadow">
+            <div className="starting-module column-container shadow">
                 <div className="intro-text" >
                     <div>
                         <h2>home</h2>
                     </div>
-
-                    <p>I am in need of hugs and food</p>
+                    <p>content content  content content content
+                        content content content content </p>
                 </div>
-
-                <p>home</p>
-
+    
+                <div className="flexcenter">
+                    <img className="logo-b"  src={bLogo} alt="Purple b logo" />
+                </div>
             </div>
     )
 }

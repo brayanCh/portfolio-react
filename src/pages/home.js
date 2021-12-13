@@ -1,5 +1,6 @@
 import Intro from "./intro"; 
 import PageContainer from "../components/pageContainer";
+import Content from "./content";
 
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     return (
         <PageContainer>
             <Intro />
+            <Content />
         </PageContainer>
     );
 }
