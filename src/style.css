@@ -65,7 +65,8 @@ body * {
 .starting-module{
     margin: 0 auto;
     width: var(--widthPage);
-    height: 600px;
+    max-width: 80%;
+    padding: 50px 0;
     margin-top: 70px;
     margin-bottom: 50px;
     border-radius: 80px;
@@ -76,15 +77,23 @@ body * {
     display: flex;
     justify-content:center;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     max-width:80%;
+    margin-bottom:800px;
+}
+
+.intro-text li{
+    margin: 5px;
 }
 
 .intro-text h2{
+    font-size: 40px;
     color: var(--indigo);
+    margin-bottom: 5px;
 }
 
 .logo-b{
+    margin-top: 40px;
     height: 450px;
     width: 370px;
 }
@@ -154,3 +163,12 @@ body * {
     color: white;
 }
 
+@media only screen and (max-width: 1000px) {
+    .column-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .column-container div{
+        margin-top: 30px;
+    }
+}

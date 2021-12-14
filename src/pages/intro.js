@@ -7,17 +7,21 @@ const Intro = () => {
 
                 <div className="intro-text" >
 
-                    <div>
-                        <h2> Welcome </h2>
-                    </div>
+                    <h2> Welcome </h2>
 
                     <p>I'm brayan Chavarro, a junior frontend developer with a Strong passion 
                         for design and creating intuitive products to the public. <br/>  <br/> 
                         I have knowledge in:</p>
 
                     <ul>
-                        <li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>React</li>
+                        <li>Angular</li>
+                        <li>Javascript</li>
+                        <li>Typescript</li>
                     </ul>
+
                 </div>
     
                 <div className="flexcenter">
