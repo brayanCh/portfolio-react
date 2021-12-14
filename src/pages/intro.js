@@ -3,7 +3,7 @@ import bLogo from "../media/BPurple.png"
 const Intro = () => {
 
     return (
-            <div className="starting-module column-container shadow">
+            <div className="oval-module column-container shadow">
 
                 <div className="intro-text" >
 

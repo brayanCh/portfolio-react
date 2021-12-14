@@ -4,7 +4,7 @@
     --navHt    : 70px;
     --widthPage: 1100px;
     --purple   : #303F9F; 
-    --indigo   : #3F51B5; 
+    --indigo   : #3F51c5; 
     --lgPurple : #C5CAE9;
     --accent   : #7C4DFF; 
     --text     : #212121;
@@ -59,10 +59,7 @@ body * {
 }
 
 
-
-/* intro */
-
-.starting-module{
+.oval-module{
     margin: 0 auto;
     width: var(--widthPage);
     max-width: 80%;
@@ -71,6 +68,9 @@ body * {
     margin-bottom: 50px;
     border-radius: 80px;
 }
+
+/* intro */
+
 
 .intro-text{
     margin: 0 auto;
@@ -98,6 +98,7 @@ body * {
     width: 370px;
 }
 
+
 /* content */
 
 .content-container{
@@ -119,8 +120,13 @@ body * {
     margin-top: 50px;
 }
 
+/* Contact */
 
-
+.form-cont{
+    flex-direction: column;
+    background-color: var(--indigo);
+    color: white;
+}
 
 /* nav */
 
@@ -136,7 +142,6 @@ body * {
     display: grid;
     align-items:center;
     grid-template-columns: 50% 50%;
-    border-bottom: 1px solid black;
     z-index: 4;
 }
 

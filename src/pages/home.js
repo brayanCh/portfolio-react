@@ -2,6 +2,7 @@ import Intro from "./intro";
 import PageContainer from "../components/pageContainer";
 import Content from "./content";
 import AboutMe from "./about"
+import Contact from "./contact";
 
 const Home = () => {
 
@@ -10,6 +11,7 @@ const Home = () => {
             <Intro />
             <Content />
             <AboutMe />
+            <Contact />
         </PageContainer>
     );
 }

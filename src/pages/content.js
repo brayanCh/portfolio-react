@@ -2,7 +2,7 @@
 const Content = () => {
 
     return (
-        <div className="content-container">
+        <div className="content-container shadow">
             <div className="paragraph column-container">
                 <p> content content content content content content content content </p>
                 <p> content content content content content content content content 
