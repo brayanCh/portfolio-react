@@ -65,7 +65,7 @@ body * {
     max-width: 80%;
     padding: 50px 0;
     margin-top: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
     border-radius: 80px;
 }
 
@@ -128,6 +128,36 @@ body * {
     color: white;
 }
 
+.input-field{
+    margin: 20px;
+    width: 400px;
+    max-width: 80%;
+    height: 30px;
+    text-align: center;
+    color: var(--purple);
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.textarea{
+    height: 120px;
+}
+
+.button-form{
+    margin-top: 50px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: var(--indigo);
+}
+
+.button-form:hover{
+    color: var( --purple);
+    background-color: white;
+}
+
 /* nav */
 
 
@@ -173,7 +203,7 @@ body * {
         display: flex;
         flex-direction: column;
     }
-    .column-container div{
+    .column-container div,p{
         margin-top: 30px;
     }
 }
