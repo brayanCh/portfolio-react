@@ -1,8 +1,8 @@
 import Intro from "./intro"; 
 import PageContainer from "../components/pageContainer";
 import Content from "./content";
-import AboutMe from "./about"
 import Contact from "./contact";
+import PreviousWork from "./previous";
 
 const Home = () => {
 
@@ -10,7 +10,7 @@ const Home = () => {
         <PageContainer>
             <Intro />
             <Content />
-            <AboutMe />
+            <PreviousWork />
             <Contact />
         </PageContainer>
     );

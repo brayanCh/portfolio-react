@@ -4,7 +4,7 @@
     --navHt    : 70px;
     --widthPage: 1100px;
     --purple   : #303F9F; 
-    --indigo   : #3F51c5; 
+    --indigo   : #3a5ad5; 
     --lgPurple : #C5CAE9;
     --accent   : #7C4DFF; 
     --text     : #212121;
@@ -46,7 +46,7 @@ body * {
 
 .shadow{
     -webkit-box-shadow: 3px 4px 10px 1px #000000;
-    box-shadow: 3px 4px 10px 1px #000000;
+    box-shadow: 0px 4px 10px 1px #000000;
 }
 
 .column-container{
@@ -112,12 +112,33 @@ body * {
 .paragraph{
     margin: 0 auto; 
     width: var(--widthPage);
+    max-width: 80%;
 }
 
 .paragraph p{
     margin: 0 auto;
-    width: 60%;
+    width: 350px;
     margin-top: 50px;
+}
+
+/* previous */
+
+.portfolio{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: var(--widthPage);
+    max-width: 80%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio h2{
+    color: var(--purple);
+}
+
+.pagecard{
+    flex-direction: column;
+    width: 450px; 
 }
 
 /* Contact */
@@ -126,6 +147,8 @@ body * {
     flex-direction: column;
     background-color: var(--indigo);
     color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .input-field{
@@ -202,8 +225,10 @@ body * {
     .column-container {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .column-container div,p{
         margin-top: 30px;
     }
+
 }
