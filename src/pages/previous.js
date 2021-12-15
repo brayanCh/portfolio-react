@@ -1,7 +1,7 @@
 import Card from "../components/cardwork"; 
 import { useState } from "react";
 import kosmicSrc from "../media/projects/kosmicThumbnail.png"
-import listOfProjects from "../components/projects";
+import Project from "../components/projects";
 
 
 const PreviousWork = () => {
@@ -13,6 +13,18 @@ const PreviousWork = () => {
         setIndex(i);
         setShown(true);
     }
+
+    const listOfProjects = [
+        <Project title="Kosmic" exit={() => setShown(false)}> 
+
+            <p>This was a project that I make in a hackaton, it is
+                a webApp that helps in the management of cattle-raisign
+                focused in tracking the vital signs of cattle in order to
+                prevent illness and facilitate the work of a veterinarian
+                doctor.</p>
+            
+        </Project>
+    ]
 
     return(
         <>
