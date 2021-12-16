@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = props => {
 
-    let navigate = useNavigate
+    let navigate = useNavigate();
 
     const pasar = link => {
         props.method();
@@ -17,8 +17,7 @@ const Navbar = props => {
             <img alt="logo" onClick={() => pasar("/")} src={logoSrc} />
 
             <div className="item-container"> 
-                <button>wah wah</button>
-                <button>wah wah</button>
+                <button onClick={() => pasar("/contact")} >Contact Me</button>
             </div>
 
         </nav>

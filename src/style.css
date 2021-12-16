@@ -44,6 +44,10 @@ body * {
 .page{
     margin-top: var(--navHt);
     overflow: hidden;
+    position: relative;
+    right: 0px;
+    animation-name: moving;
+    animation-duration: 0.6s;
 }
 
 .shadow{
@@ -333,6 +337,10 @@ body * {
     background-color: var(--indigo);
 }
 
+@keyframes moving {
+  0%   {right: -100%;}
+  100% {right: 0px;}
+}
 
 @media only screen and (max-width: 1000px) {
     .column-container {

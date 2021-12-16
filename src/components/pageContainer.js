@@ -1,8 +1,10 @@
 
 const PageContainer = props => {
 
+    
+
     return (
-        <div className="page">
+        <div className={props.um ?"page hidden-pr" : "page"}>
             {props.children}
         </div>
     )

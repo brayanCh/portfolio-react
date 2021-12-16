@@ -4,10 +4,10 @@ import Content from "./content";
 import Contact from "./contact";
 import PreviousWork from "./previous";
 
-const Home = () => {
+const Home = props => {
 
     return (
-        <PageContainer>
+        <PageContainer um={props.um}>
             <Intro />
             <Content />
             <PreviousWork />
