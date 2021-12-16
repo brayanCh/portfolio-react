@@ -194,6 +194,7 @@ body * {
 .project{
     position: fixed;
     top: var(--navHt);
+    right: 0px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -201,33 +202,37 @@ body * {
     flex-direction:column;
     color: white;
     background-color: var(--purple);
+    overflow-y: scroll;
 }
 
-.project p{
+.hidden-pr{
+    right: 100%;
+}
+
+.project-content{
+    width: 600px;
+    display:flex;
+    flex-direction:column;
+}
+.project p, ul{
+    align-self: center;
     width: 500px;
     max-width: 70%;
-    margin: 50px;
 }
 
 .project img{
+    margin-top: 20px;
     width: 600px;
-}
-
-.header-project{
-    display: grid;
-    grid-template-areas: "a b c"; 
-    width: 95%;
-}
-.head{
-    grid-area: "b";
+    margin-bottom: 80px;
 }
 
 .wrapper-exit{
-    grid-area: "c";
-    display:flex;
-    flex-direction: row-reverse;
-    align-items: center;
+    top: 80px;
+    right: 40px;
+    position: fixed;
 }
+
+.
 
 .wrapper-exit img:hover{
     transform: rotate(720deg);
