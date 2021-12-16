@@ -22,7 +22,7 @@ const PreviousWork = () => {
     const listOfProjects = [
         <Project title="Kosmic" exit={() => setShown(false)}> 
 
-            <p>This was a project that I make in a hackaton, it is
+            <p>This was a project that I made in a hackaton, it is
                 a webApp that helps in the management of cattle-raisign
                 focused in tracking the vital signs of cattle in order to
                 prevent illness and facilitate the work of a veterinarian

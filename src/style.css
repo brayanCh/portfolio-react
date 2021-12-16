@@ -4,6 +4,7 @@
     --navHt    : 70px;
     --widthPage: 1100px;
     --purple   : #303F9F; 
+    --red      : #be3434;
     --indigo   : #3a5ad5; 
     --lgPurple : #C5CAE9;
     --accent   : #7C4DFF; 
@@ -310,19 +311,27 @@ body * {
     display: flex;
     align-items:center;
     flex-direction: row-reverse;
+    margin-right: 10px;
 }
-.item-container p{
+.item-container button{
     border-radius: 5px;
     height:40px;
     width: 100px;
     margin: 0 18px 0 0;
     display:flex;
     align-items: center;
+    border: none;
+    font-size: 15px;
+    background-color: var(--purple);
     justify-content: center;
-    text-decoration: none;
     color: white;
 }
 
+
+
+.item-container button:hover{
+    background-color: var(--indigo);
+}
 
 
 @media only screen and (max-width: 1000px) {
