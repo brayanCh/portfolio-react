@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/bar";
 import PageContainer from "./components/pageContainer";
+import Footer from "./components/footer";
 
 // pages 
 import Home from "./pages/home";
@@ -16,6 +17,7 @@ const App = () => {
                 <Route exact path="/contact" element={<PageContainer><Contact/></PageContainer>}/>
                 
             </Routes>
+            <Footer />
         </Router>
     );
 }

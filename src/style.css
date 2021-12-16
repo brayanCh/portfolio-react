@@ -39,6 +39,7 @@ body * {
     justify-content:center;
 }
 
+
 .page{
     margin-top: var(--navHt);
     overflow: hidden;
@@ -57,6 +58,27 @@ body * {
 
 .column-container div{
     margin: 0 auto; 
+}
+
+.footer{
+    background-color: var(--indigo);
+    color: white;
+    flex-direction: column;
+    padding: 20px;
+} 
+
+.footer img{
+    width: 40px;
+}
+
+.footer a{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    align-items: center;
 }
 
 
@@ -179,6 +201,7 @@ body * {
 .project p{
     width: 500px;
     max-width: 70%;
+    margin: 50px;
 }
 
 .project img{
@@ -289,6 +312,8 @@ body * {
     text-decoration: none;
     color: white;
 }
+
+
 
 @media only screen and (max-width: 1000px) {
     .column-container {
