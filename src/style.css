@@ -68,7 +68,7 @@ body * {
 } 
 
 .footer img{
-    width: 40px;
+    width: 30px;
 }
 
 .footer a{
@@ -136,12 +136,17 @@ body * {
     margin: 0 auto; 
     width: var(--widthPage);
     max-width: 80%;
+    margin-top: 80px;
 }
 
 .paragraph p{
     margin: 0 auto;
     width: 350px;
     margin-top: 50px;
+}
+
+.paragraph img{
+    width: 400px;
 }
 
 /* previous */
@@ -240,7 +245,7 @@ body * {
     background-color: var(--indigo);
     color: white;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .input-field{
@@ -321,8 +326,11 @@ body * {
         flex-direction: column;
         align-items: center;
     }
-    .column-container div,p{
+    .column-container div,p, img{
         margin-top: 30px;
+    }
+    .paragraph{
+        margin-top: 20px;
     }
 
 }
