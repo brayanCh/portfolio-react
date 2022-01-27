@@ -16,7 +16,7 @@ const Intro = () => {
                         <br />
                         <br />
 
-                        Tengo experiencias en: 
+                        Tengo experiencia en: 
                     </p>
 
                     <ul>

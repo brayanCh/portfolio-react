@@ -237,6 +237,11 @@ body * {
     position: fixed;
 }
 
+.wrapper-exit-hd{
+    top: 80px;
+    right: 100%;
+    position: fixed;
+}
 .
 
 .wrapper-exit img:hover{
@@ -244,6 +249,11 @@ body * {
     transition: 2s;
 }
 .wrapper-exit img{
+    height: 40px;
+    width: 40px;
+}
+
+.wrapper-exit-hd img{
     height: 40px;
     width: 40px;
 }

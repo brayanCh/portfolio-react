@@ -22,16 +22,19 @@ const PreviousWork = () => {
     const listOfProjects = [
         <Project title="Kosmic" exit={() => setShown(false)}> 
 
-            <p>This was a project that I made in a hackaton, it is
-                a webApp that helps in the management of cattle-raisign
-                focused in tracking the vital signs of cattle in order to
-                prevent illness and facilitate the work of a veterinarian
-                doctor.</p>
-            
+            <p> 
+                Este proyecto que hice en una hackaton de la universidad de
+                Antioquia, es una aplicacion web que facilita las labores 
+                ganaderas que permite la visualizacion en tiempo real de los
+                signos vitales del ganado, para prevenir enfermedades y aplicar 
+                tratamientos.
+            </p>
             <img src={km1} alt="starting-page" />
 
-            <p> This page was made by me and another group of wonderful
-                programmers:</p>
+            <p> 
+                Esta pagina fue desarrollada por mi y un grupo de excelentes
+                programadores:
+            </p>
         
             <ul> 
                 <li>Juan Carlos Orozco.</li>
@@ -39,9 +42,10 @@ const PreviousWork = () => {
                 <li>Carlos Felipe Cortes.</li>
             </ul>
 
-            <p> It includes the register of veterinarians,
-            farm gestors, cattle and anomalies in the vital signs of 
-            a given cow.</p> 
+            <p> 
+                Incluye el registro de veterinarios, gestores de finca
+                Ganado y anomalias en los signos vitales de un bovino dado. 
+            </p>
 
             <img src={km2} alt="data of vital signs" />
             <img src={km3} alt="looking the data of a gestor" />
@@ -52,7 +56,7 @@ const PreviousWork = () => {
     return(
         <>
             <div className="portfolio flexcenter" >
-                <h2> Previous Work</h2>
+                <h2> Proyectos previos</h2>
                 
                 <Card method={() => mostrarProyecto(0)} src={kosmicSrc} >Kosmic</Card> 
         

@@ -19,7 +19,7 @@ const Project = props => {
                 <h2>{props.title}</h2>
             </div>
         
-            <div className={!isDisplayed ? "wrapper-exit hidden-pr" : "wrapper-exit"} onClick={cerrar} >
+            <div className={!isDisplayed ? "wrapper-exit-hd" : "wrapper-exit"} onClick={cerrar} >
                 <img src={exitSrc} alt="exit" />
             </div>
 
