@@ -7,11 +7,17 @@ const Intro = () => {
 
                 <div className="intro-text" >
 
-                    <h2> Welcome </h2>
+                    <h2> Bienvenid@ </h2>
 
-                    <p>I'm brayan Chavarro, a junior frontend developer with a Strong passion 
-                        for design and creating intuitive products to the public. <br/>  <br/> 
-                        I have knowledge in:</p>
+                    <p>
+                        Soy Brayan Chavarro, un desarrollador junior de frontend con una
+                        Fuerte pasion por el diseño y la creacion de paginas Web
+                
+                        <br />
+                        <br />
+
+                        Tengo experiencias en: 
+                    </p>
 
                     <ul>
                         <li>HTML</li>

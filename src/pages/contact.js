@@ -15,17 +15,17 @@ const Contact = () => {
 
     return(
         <form className="oval-module flexcenter shadow form-cont" onSubmit={enviar} >
-            <h2> Contact </h2>
+            <h2> Contacto </h2>
             
             <EmailInput message="Email" value={email} setter={setEmail}/>
 
-            <Input message="Name" value={name} setter={setName}/>
+            <Input message="Nombre" value={name} setter={setName}/>
 
-            <Input message="Subject" value={subject} setter={setSubject}/>
+            <Input message="Asunto" value={subject} setter={setSubject}/>
 
-            <InputArea message="Content" value={content} setter={setContent}/>
+            <InputArea message="Contenido" value={content} setter={setContent}/>
 
-            <ButtonForm>Send it</ButtonForm>
+            <ButtonForm>Enviar</ButtonForm>
             
         </form>
     );

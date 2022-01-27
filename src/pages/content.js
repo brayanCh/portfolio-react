@@ -7,10 +7,12 @@ const Content = () => {
     return (
         <div className="content-container shadow">
 
-            <div className="paragraph column-container">
-                <p> I can help you in many diferent ways, have you ever thought of having
-                    a personal website, maybe you're a photographer or arquitect that
-                    needs a way to expose yourself in social media or in the job market.</p>
+            <div className="paragraph column-container"> 
+                <p> 
+                    Yo puedo ayudarte de diferentes maneras ¿Alguna vez has pensado
+                    en tener un sitio web personal?¿Tal vez eres un fotografo o arquitecto
+                    profesional que necesita mostrar su portafolio  al mercado laboral? 
+                </p>
                 
                 <img src={img1} alt="" />
             </div>
@@ -18,17 +20,23 @@ const Content = () => {
             <div className="paragraph column-container">
 
 
-                <p> Or maybe you need something more complicated, like an ecommerce for
-                things related to fitness like healthy foods, or you are selling a course
-                in a given topic, like workout routines, film analysis or drawing.</p>
+                <p>
+                    ¿O tal vez necesitas algo mas complejo? como un ecommerce 
+                    para cosas relacionas con el fitness como comida saludable
+                    o vender cursos en un tema dado como rutinas de ejercicios,
+                    diseño grafico o Marketing digital.
+                </p>
 
                 <img src={img2} alt="" />
             </div>
             <div className="paragraph column-container">
-                <p> Other option could be that you're part of a company and you
-                need something big, like a redesing of a page to make it more dinamic,
-                more accesible to the general public, or some webApp related to social
-                media or offering some kind of suscription service. </p>
+                <p>
+                    Otra opcion podria ser que eres parte de una compañia y tu 
+                    necesitas algo mas grande, como un rediseño de una pagina
+                    web para hacerla más dinamica y accesible para el publico
+                    general, o alguna webApp de social media o que ofrezca un modelo
+                    de suscripcion de servicios.
+                </p>
                 
                 <img src={img3} alt="" />
             </div>

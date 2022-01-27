@@ -17,7 +17,7 @@ const Navbar = props => {
             <img alt="logo" onClick={() => pasar("/")} src={logoSrc} />
 
             <div className="item-container"> 
-                <button onClick={() => pasar("/contact")} >Contact Me</button>
+                <button onClick={() => pasar("/contact")} >Contactame</button>
             </div>
 
         </nav>
