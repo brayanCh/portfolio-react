@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.c15ce686.chunk.css",
+    "main.js": "/portfolio/static/js/main.472d9547.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.472d9547.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.1178cb6e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.1178cb6e.js.map",
+    "static/js/2.09b441c9.chunk.js": "/portfolio/static/js/2.09b441c9.chunk.js",
+    "static/js/2.09b441c9.chunk.js.map": "/portfolio/static/js/2.09b441c9.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.c15ce686.chunk.css.map": "/portfolio/static/css/main.c15ce686.chunk.css.map",
+    "static/js/2.09b441c9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.09b441c9.chunk.js.LICENSE.txt",
+    "static/media/4237.1e4f479f.jpg": "/portfolio/static/media/4237.1e4f479f.jpg",
+    "static/media/BPurple.2ced63dd.png": "/portfolio/static/media/BPurple.2ced63dd.png",
+    "static/media/Screenshot_1_kosmic.6280763e.png": "/portfolio/static/media/Screenshot_1_kosmic.6280763e.png",
+    "static/media/Screenshot_2_kosmic.b2a8755d.png": "/portfolio/static/media/Screenshot_2_kosmic.b2a8755d.png",
+    "static/media/Screenshot_3_kosmic.f03fa9ec.png": "/portfolio/static/media/Screenshot_3_kosmic.f03fa9ec.png",
+    "static/media/external-content.duckduckgo.com.16954ee6.jpg": "/portfolio/static/media/external-content.duckduckgo.com.16954ee6.jpg",
+    "static/media/kosmicThumbnail.6c178e1d.png": "/portfolio/static/media/kosmicThumbnail.6c178e1d.png",
+    "static/media/three-women-and-one-man-working-in-office.d9dd95d9.jpg": "/portfolio/static/media/three-women-and-one-man-working-in-office.d9dd95d9.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1178cb6e.js",
+    "static/js/2.09b441c9.chunk.js",
+    "static/css/main.c15ce686.chunk.css",
+    "static/js/main.472d9547.chunk.js"
+  ]
+}
