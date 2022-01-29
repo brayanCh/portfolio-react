@@ -22,7 +22,7 @@ const App = () => {
         <Router>
             <Navbar method={unmount}/>
             <Routes>
-                <Route exact path="/" element={<Home um={isUnmounting}/>}/>
+                <Route exact path="/portfolio-react" element={<Home um={isUnmounting}/>}/>
                 <Route exact path="/contact" element={<PageContainer um={isUnmounting}><Contact/></PageContainer>}/>
                 <Route exact path="*" element={<Home />}/>
                 

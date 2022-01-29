@@ -14,7 +14,7 @@ const Navbar = props => {
     return (
         <nav className="navbar" >
             
-            <img alt="logo" onClick={() => pasar("/")} src={logoSrc} />
+            <img alt="logo" onClick={() => pasar("/portfolio-react")} src={logoSrc} />
 
             <div className="item-container"> 
                 <button onClick={() => pasar("/contact")} >Contactame</button>
