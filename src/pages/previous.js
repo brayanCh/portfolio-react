@@ -20,7 +20,7 @@ const PreviousWork = () => {
     }
 
     const listOfProjects = [
-        <Project title="Kosmic" exit={() => setShown(false)}> 
+        <Project title="Kosmic" link="https://kosmic.herokuapp.com/" exit={() => setShown(false)}> 
 
             <p> 
                 Este proyecto que hice en una hackaton de la universidad de

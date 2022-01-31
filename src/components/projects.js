@@ -16,7 +16,7 @@ const Project = props => {
         <div className={!isDisplayed ? "project hidden-pr" : "project"}>
 
             <div className="head flexcenter">
-                <h2>{props.title}</h2>
+                <h2>{props.title}    <a href={props.link}>{props.link}</a> </h2>
             </div>
         
             <div className={!isDisplayed ? "wrapper-exit-hd" : "wrapper-exit"} onClick={cerrar} >

@@ -210,6 +210,15 @@ body * {
     overflow-y: scroll;
 }
 
+.head{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+.head a{
+    color: white;
+    text-decoration: none;
+}
 .hidden-pr{
     right: 100%;
 }
