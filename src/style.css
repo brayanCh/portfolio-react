@@ -211,9 +211,8 @@ body * {
 }
 
 .head{
-    display: grid;
-    grid-template-columns: 50% 50%;
     justify-content: center;
+    max-width: 85%;
 }
 .head a{
     color: white;
@@ -227,6 +226,7 @@ body * {
     width: 600px;
     display:flex;
     flex-direction:column;
+    max-width: 90%;
 }
 .project p, ul{
     align-self: center;
@@ -235,9 +235,11 @@ body * {
 }
 
 .project img{
+    align-self: center;
     margin-top: 20px;
     width: 600px;
     margin-bottom: 80px;
+    max-width: 90%;
 }
 
 .wrapper-exit{
@@ -372,8 +374,15 @@ body * {
     .paragraph{
         margin-top: 20px;
     }
-    .column-container img{
+    .column-container img, .pagecard img{
         width: 90%;
+        height: auto;
     }
 
+    .paragraph p{
+        max-width: 90%;
+    }
+    .pagecard{
+        max-width: 90%;
+    }
 }
