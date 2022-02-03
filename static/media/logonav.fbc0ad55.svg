@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="logo one-man-army.svg"
+   inkscape:export-filename="/home/brayanch/Profesional/portfolio-react/src/media/logonav.png"
+   inkscape:export-xdpi="21.1875"
+   inkscape:export-ydpi="21.1875"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="89.5"
+     inkscape:cy="284"
+     inkscape:window-width="1876"
+     inkscape:window-height="974"
+     inkscape:window-x="20"
+     inkscape:window-y="82"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path8532"
+       style="fill:#ffffff;stroke:none;stroke-width:2.7062px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 295.42104,208.27078 v 37.10279 l 49.98247,0.42153 -45.16654,38.77902 -0.60893,54.3663 145.57198,-130.72441 c -50.0813,-1.07963 -103.95048,0.15123 -149.77898,0.0548 z m -143.14922,0.0532 -75.975942,0.0282 37.898212,35.49127 38.07773,0.32197 z"
+       sodipodi:nodetypes="cccccccccccc"
+       inkscape:export-filename="/home/brayanch/Profesional/front-one-man-army/src/media/logonav.png"
+       inkscape:export-xdpi="12.9375"
+       inkscape:export-ydpi="12.9375" />
+    <path
+       style="fill:none;stroke:none;stroke-width:1.7"
+       id="rect2688"
+       width="88.289215"
+       height="147.25035"
+       x="174.61852"
+       y="163.39706"
+       sodipodi:type="rect"
+       d="m 174.61852,163.39706 h 88.28921 v 147.25036 h -88.28921 z"
+       inkscape:export-filename="/home/brayanch/Profesional/front-one-man-army/src/media/logonav.png"
+       inkscape:export-xdpi="12.9375"
+       inkscape:export-ydpi="12.9375" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Capa 2">
+    <path
+       style="fill:#ffffff;stroke:none;stroke-width:1.15537px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 215.47338,9.7744082 159.88039,70.712243 V 443.68518 l 55.59299,57.00688 z"
+       id="path6811"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/brayanch/Profesional/front-one-man-army/src/media/logonav.png"
+       inkscape:export-xdpi="12.9375"
+       inkscape:export-ydpi="12.9375" />
+    <path
+       id="path7344"
+       style="fill:#ffffff;stroke:none;stroke-width:1.20811px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 287.81277,70.711566 227.02844,9.7754809 V 500.69206 l 1.16055,-1.08977 0.002,0.094 220.9536,-207.22179 V 216.2194 L 287.81277,360.88318 Z"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="/home/brayanch/Profesional/front-one-man-army/src/media/logonav.png"
+       inkscape:export-xdpi="12.9375"
+       inkscape:export-ydpi="12.9375" />
+  </g>
+</svg>
