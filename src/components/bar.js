@@ -1,4 +1,4 @@
-import logoSrc from "../media/logonav.png";
+import logoSrc from "../media/logonav.svg";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = props => {

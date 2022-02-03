@@ -1,7 +1,7 @@
 /* global*/
 
 :root {
-    --navHt    : 70px;
+    --navHt    : 65px;
     --widthPage: 1100px;
     --purple   : #303F9F; 
     --red      : #be3434;
@@ -313,20 +313,19 @@ body * {
 
 .navbar{
     position: fixed;
-    top: 0;
+    top: 0px;
     height: var(--navHt);
     width: 100%;
     background-color: var(--purple);
     color: white;
     display: grid;
-    align-items:center;
     grid-template-columns: 50% 50%;
     z-index: 4;
 }
 
 .navbar img{
-    margin-left: 5px;
-    height: 90%;
+    margin: 7px 0px 10px 5px ;
+    height: 50px;
     width: 60px;
 }
 
@@ -372,6 +371,9 @@ body * {
     }
     .paragraph{
         margin-top: 20px;
+    }
+    .column-container img{
+        width: 90%;
     }
 
 }
