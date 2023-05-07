@@ -1,12 +1,19 @@
-import Card from "../components/cardwork"; 
-import { useState } from "react";
-import kosmicSrc from "../media/projects/kosmicThumbnail.png";
-import Project from "../components/projects";
+import Card from '../components/cardwork'; 
+import { useState } from 'react';
+import kosmicSrc from '../media/projects/kosmicThumbnail.png';
+import Project from '../components/projects';
 
-import km1 from "../media/projects/Screenshot_1_kosmic.png";
-import km2 from "../media/projects/Screenshot_2_kosmic.png";
-import km3 from "../media/projects/Screenshot_3_kosmic.png";
+import km1 from '../media/projects/Screenshot_1_kosmic.png';
+import km2 from '../media/projects/Screenshot_2_kosmic.png';
+import km3 from '../media/projects/Screenshot_3_kosmic.png';
 
+/*
+Teral Mobile - React Native
+Teral web - React / Next.js
+Kosmic - React /Firebase
+Graphql Api - Rust
+
+*/
 
 
 const PreviousWork = () => {
@@ -17,10 +24,10 @@ const PreviousWork = () => {
     const mostrarProyecto = i => {
         setIndex(i);
         setShown(true);
-    }
+    };
 
     const listOfProjects = [
-        <Project title="Kosmic" link="https://kosmic.herokuapp.com/" exit={() => setShown(false)}> 
+        <Project key=""  title="Kosmic" link="https://kosmic.herokuapp.com/" exit={() => setShown(false)}> 
 
             <p> 
                 Este proyecto que hice en una hackaton de la universidad de
@@ -51,12 +58,15 @@ const PreviousWork = () => {
             <img src={km3} alt="looking the data of a gestor" />
 
         </Project>
-    ]
+    ];
 
     return(
         <>
-            <div className="portfolio flexcenter" >
-                <h2> Proyectos previos</h2>
+            <div
+                className="portfolio flexcenter"
+                id="projects"
+            >
+                <h2>Proyectos previos</h2>
                 
                 <Card method={() => mostrarProyecto(0)} src={kosmicSrc} >Kosmic</Card> 
         
@@ -64,7 +74,7 @@ const PreviousWork = () => {
 
             {isShown && listOfProjects[indexProject]}
         </>
-    )
-}
+    );
+};
 
 export default PreviousWork;
