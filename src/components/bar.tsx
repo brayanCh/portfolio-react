@@ -26,12 +26,57 @@ const NavItem = (props: { text: string, location: string, isOnTop: boolean}) => 
     );
 };
 
+interface IMenuProps {
+    close: () => void;
+}
+
+const MobileMenu = ({close} : IMenuProps) => {
+
+    const scrollTo = (location: string) : void => {
+
+        const element = document.getElementById(location);
+        if (element)
+        {
+            close();
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+
+    };
+
+    return (
+        <div
+            className="mobile-menu"
+        >
+            <button
+                className="item-mobile-menu"
+                onClick={() => scrollTo('contact')}
+            >
+                Contact Me
+            </button>
+            <button
+                className="item-mobile-menu"
+                onClick={() => scrollTo('projects')}
+            >
+                Projects
+            </button>
+            <button
+                className="item-mobile-menu"
+                onClick={() => scrollTo('projects')}
+            >
+                Experience
+            </button>
+        </div>
+    );
+};
+
 const Navbar = (props : inputProps) => {
 
     const navigate = useNavigate();
 
     // state to keep track of the scroll position
     const [isOnTop, setIsOnTop] = useState<boolean>(true);
+    const [isMobile, setIsMobile] = useState<boolean>(true);
+    const [openDrawer, setOpenDrawer] = useState<boolean>(false);
 
     const pasar = useCallback((link: string) : void => {
         props.method();
@@ -53,7 +98,6 @@ const Navbar = (props : inputProps) => {
         };
     }, [handleScroll]);
 
-
     return (
         <nav className={isOnTop ? 'navbar nv-top shadow' : 'navbar'} >
             <img
@@ -62,23 +106,41 @@ const Navbar = (props : inputProps) => {
                 src={logoSrc}
                 className="nav-img"
             />
-            <div className="item-container"> 
-                <NavItem
-                    text="Projects"
-                    location="projects"
-                    isOnTop={isOnTop}
-                />
-                <NavItem
-                    text="Contact me"
-                    location="contact"
-                    isOnTop={isOnTop}
-                />
-                <NavItem
-                    text="Experience"
-                    location="contact"
-                    isOnTop={isOnTop}
-                />
-            </div>
+            {isMobile ?
+                (
+                    <>
+                        <button onClick={() => setOpenDrawer(true)}>
+                            menu
+                        </button>
+                        { openDrawer && 
+                            <MobileMenu 
+                                close={() => setOpenDrawer(false)}
+                            /> 
+                        }
+                    </>
+                )
+                :
+                (
+
+                    <div className="item-container"> 
+                        <NavItem
+                            text="Projects"
+                            location="projects"
+                            isOnTop={isOnTop}
+                        />
+                        <NavItem
+                            text="Contact me"
+                            location="contact"
+                            isOnTop={isOnTop}
+                        />
+                        <NavItem
+                            text="Experience"
+                            location="contact"
+                            isOnTop={isOnTop}
+                        />
+                    </div>
+                )
+            }
 
         </nav>
     );

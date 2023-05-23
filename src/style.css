@@ -348,6 +348,27 @@ body * {
     align-items: center;
     z-index: 4;
 }
+.item-mobile-menu {
+    background-color: #fff0;
+    color: #fff;
+    border: 0px;
+    font-size: 30px;
+}
+.mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
     /*
      background-color: #222; 
      */
