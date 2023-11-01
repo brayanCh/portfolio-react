@@ -69,19 +69,18 @@ const MobileMenu = ({close} : IMenuProps) => {
     );
 };
 
-const Navbar = (props : inputProps) => {
+const Navbar = () => {
 
     const navigate = useNavigate();
 
     // state to keep track of the scroll position
     const [isOnTop, setIsOnTop] = useState<boolean>(true);
-    const [isMobile, setIsMobile] = useState<boolean>(true);
+    const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 600);
     const [openDrawer, setOpenDrawer] = useState<boolean>(false);
 
     const pasar = useCallback((link: string) : void => {
-        props.method();
-        setTimeout(() => navigate(link), 500);
-    }, [props, navigate]);
+        navigate(link)
+    }, [navigate]);
 
     // function to update the scroll position on scroll
     const handleScroll = useCallback(() => {
@@ -92,13 +91,16 @@ const Navbar = (props : inputProps) => {
     // check if the screen is mobile
     const checkMobile = useCallback(() : void => {
         const width = window.innerWidth;
-        setIsMobile(width < 600);
+        setIsMobile(width < 1020);
     }, []);
+
     // use effect to add and remove the scroll event listener
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true });
+        window.addEventListener('resize', checkMobile);
 
         return () : void => {
+            window.removeEventListener('resize', checkMobile);
             window.removeEventListener('scroll', handleScroll);
         };
     }, [handleScroll]);
