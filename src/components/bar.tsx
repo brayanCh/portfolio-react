@@ -1,4 +1,5 @@
-import logoSrc from '../media/new_portfolio_logo.png';
+import logoSrc from '../media/bLogos.png';
+import menuSrc from '../media/menu-black.png';
 import { useNavigate } from 'react-router-dom';
 import {useCallback, useEffect, useState} from 'react';
 
@@ -40,7 +41,6 @@ const MobileMenu = ({close} : IMenuProps) => {
             close();
             element.scrollIntoView({ behavior: 'smooth' });
         }
-
     };
 
     return (
@@ -89,6 +89,11 @@ const Navbar = (props : inputProps) => {
         setIsOnTop(position < 90);
     }, []);
 
+    // check if the screen is mobile
+    const checkMobile = useCallback(() : void => {
+        const width = window.innerWidth;
+        setIsMobile(width < 600);
+    }, []);
     // use effect to add and remove the scroll event listener
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -105,13 +110,18 @@ const Navbar = (props : inputProps) => {
                 onClick={() => pasar('/portfolio-react')}
                 src={logoSrc}
                 className="nav-img"
+                style={{ filter: !isOnTop ? 'invert(0)' : 'invert(1)' }}
             />
             {isMobile ?
                 (
                     <>
-                        <button onClick={() => setOpenDrawer(true)}>
-                            menu
-                        </button>
+                        <img 
+                            alt="menu button"
+                            onClick={() => setOpenDrawer(true)}
+                            className="nav-menu"
+                            style={{ filter: isOnTop ? 'invert(0)' : 'invert(1)' }}
+                            src={menuSrc}
+                        />
                         { openDrawer && 
                             <MobileMenu 
                                 close={() => setOpenDrawer(false)}
