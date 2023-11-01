@@ -79,7 +79,7 @@ const Navbar = () => {
     const [openDrawer, setOpenDrawer] = useState<boolean>(false);
 
     const pasar = useCallback((link: string) : void => {
-        navigate(link)
+        navigate(link);
     }, [navigate]);
 
     // function to update the scroll position on scroll

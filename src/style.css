@@ -11,6 +11,17 @@
     --text     : #212121;
     --mGray    : #757575; 
     --sGray    : #BDBDBD; 
+    /* new colors material ui */
+    --primary10: #002117;
+    --primary20: #00382A;
+    --primary30: #00513E;
+    --primary40: #006B54;
+    --primary50: #00876A;
+    --primary60: #17A382;
+    --primary70: #42BF9B;
+    --primary80: #62DBB6;
+    --primary90: #80F8D1;
+    --primary95: #BAFFE5;
 }
 @font-face {
     font-family: "Emberly";
@@ -23,6 +34,12 @@
     src: local("Wild-World"),
     url("./fonts/wild-world.otf") format("opentype");
     font-weight: bold;
+}
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto"),
+    url("./fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+    font-weight: 300;
 }
 
 body {
@@ -386,11 +403,6 @@ body * {
 
 .nv-top {
     background-color: #fff;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    top: 10px;
-    height: var(--navHt);
 }
 
 .item-container{
@@ -408,21 +420,26 @@ body * {
     border: none;
     font-size: 16px;
     justify-content: center;
-    color: #231232;
+    color: var(--primary30);
     background-color: #0000;
-    font-family: 'Helvetica';
+    font-family: 'Roboto';
     border-color: var(--indigo);
+    border-radius: 10px;
 }
  
+.item-nav:hover {
+    color: var(--primary50);
+    transition: 0.5s;
+}
+
 .item-w {
     color: #fff;
     border-color: #fff;
 }
 
-
-
-.item-nav:hover {
-    font-size: 18px;
+.item-w:hover {
+    color: var(--primary90);
+    transition: 0.5s;
 }
 
 @keyframes moving {
