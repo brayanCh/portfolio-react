@@ -20,7 +20,7 @@ const NavItem = (props: { text: string, location: string, isOnTop: boolean}) => 
     return (
         <button
             onClick={scrollTo}
-            className={props.isOnTop ? 'item-nav' : 'item-nav item-w'}
+            className={!props.isOnTop ? 'item-nav' : 'item-nav item-w'}
         >
             {props.text}
         </button>
@@ -106,13 +106,13 @@ const Navbar = () => {
     }, [handleScroll]);
 
     return (
-        <nav className={isOnTop ? 'navbar nv-top shadow' : 'navbar'} >
+        <nav className={!isOnTop ? 'navbar nv-top shadow' : 'navbar'} >
             <img
                 alt="logo"
                 onClick={() => pasar('/portfolio-react')}
                 src={logoSrc}
                 className="nav-img"
-                style={{ filter: !isOnTop ? 'invert(0)' : 'invert(1)' }}
+                style={{ filter: isOnTop ? 'invert(0)' : 'invert(1)' }}
             />
             {isMobile ?
                 (
@@ -121,7 +121,7 @@ const Navbar = () => {
                             alt="menu button"
                             onClick={() => setOpenDrawer(true)}
                             className="nav-menu"
-                            style={{ filter: isOnTop ? 'invert(0)' : 'invert(1)' }}
+                            style={{ filter: !isOnTop ? 'invert(0)' : 'invert(1)' }}
                             src={menuSrc}
                         />
                         { openDrawer && 
