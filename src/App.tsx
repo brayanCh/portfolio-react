@@ -1,8 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/bar';
-//import PageContainer from './components/pageContainer';
 import Footer from './components/footer';
-import { useState } from 'react';
 
 // pages 
 import Home from './pages/home';
