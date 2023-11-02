@@ -10,14 +10,13 @@ import Home from './pages/home';
 
 const App = () => {
     
-    const [isUnmounting, setUnmount] = useState<boolean>(false);
 
-    //<Route path="/contact" element={<PageContainer um={isUnmounting}><Contact/></PageContainer>}/>
+    //<Route path="/contact" element={<PageContainer m={isUnmounting}><Contact/></PageContainer>}/>
     return (
         <Router>
             <Navbar /> 
             <Routes>
-                <Route path="/portfolio-react" element={<Home um={isUnmounting}/>}/>
+                <Route path="/portfolio-react" element={<Home />}/>
                 <Route path="*" element={<Home />}/>
             </Routes>
             <Footer />
