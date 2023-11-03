@@ -8,8 +8,6 @@ import Home from './pages/home';
 
 const App = () => {
     
-
-    //<Route path="/contact" element={<PageContainer m={isUnmounting}><Contact/></PageContainer>}/>
     return (
         <Router>
             <Navbar /> 

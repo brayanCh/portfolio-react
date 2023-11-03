@@ -1,13 +1,18 @@
 import { useCallback, useState } from 'react';
 import arrow from '../media/LtoR.png';
+import { useTranslation } from 'react-i18next';
 
 interface CarouselProps {
-    images: any[];
+    images: { 
+        url: any;
+        paragraph: string;
+    }[];
 }
 
 const Carousel = ({images}: CarouselProps) => {
 
     const [activeIndex, setActiveIndex] = useState<number>(0);
+    const { t, i18n } = useTranslation();
 
     const handleSwipe = useCallback((isLeft: boolean) => {
 
@@ -22,8 +27,11 @@ const Carousel = ({images}: CarouselProps) => {
     return (
         <div className="image-slider">
             {images.map((image, index) => (
-                <div className="image-container" key={image} style={{ transform: `translateX(${-(activeIndex * 100)}%)` }}>
-                    <img className="img-full"  src={image} alt={`Image ${index}`} />
+                <div className="image-container" key={index} style={{ transform: `translateX(${-(activeIndex * 100)}%)` }}>
+                    <img className="img-full"  src={image.url} alt={`Image ${index}`} />
+                    <p className="image-slider_text">
+                        {t(image.paragraph)}
+                    </p>
                 </div>
             ))}
             <button className='right-slide left' onClick={() => handleSwipe(true)}>
@@ -35,7 +43,7 @@ const Carousel = ({images}: CarouselProps) => {
             <div className="image-slider_dots_cont">    
                 {images.map((image, index) => (
                     <button
-                        key={image}
+                        key={index}
                         className={`image-slider_dot ${activeIndex === index ? 'active_dot' : ''}`}
                         onClick={() => setActiveIndex(index)}
                     />

@@ -1,19 +1,30 @@
 import Carousel from '../components/Carousel';
 import Content from './content';
-import Contact from './contact';
 import PreviousWork from './previous';
 import firstBG from '../media/introCarousel/programming-code-colorful.jpg';
 import secondBG from '../media/introCarousel/project-wallpaper-1920x1200.jpg';
 import thirdBG from '../media/introCarousel/0e055bd6fc948f460fe50aa193ac36e6.jpg';
-import forthBG from '../media/introCarousel/iJAYES_webp (Imagen WEBP, 1920 × 1080 píxeles) - Escalado.jpg';
+import fourthBG from '../media/introCarousel/iJAYES_webp (Imagen WEBP, 1920 × 1080 píxeles) - Escalado.jpg';
 
 const Home = () : React.JSX.Element => {
 
     const images = [
-        firstBG,
-        secondBG,
-        thirdBG,
-        forthBG,
+        {
+            url: firstBG,
+            paragraph: 'intro.first_p',
+        },
+        {
+            url: secondBG,
+            paragraph: 'intro.second_p',
+        },
+        {
+            url: thirdBG,
+            paragraph: 'intro.third_p',
+        },
+        {
+            url: fourthBG,
+            paragraph: 'intro.fourth_p',
+        },
     ];
 
     return (
@@ -21,7 +32,6 @@ const Home = () : React.JSX.Element => {
             <Carousel images={images}/>
             <Content />
             <PreviousWork />
-            <Contact />
         </>
     );
 };
