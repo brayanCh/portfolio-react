@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react';
+import arrow from '../media/LtoR.png';
 
 interface CarouselProps {
     images: any[];
@@ -25,6 +26,12 @@ const Carousel = ({images}: CarouselProps) => {
                     <img className="img-full"  src={image} alt={`Image ${index}`} />
                 </div>
             ))}
+            <button className='right-slide left' onClick={() => handleSwipe(true)}>
+                <img src={arrow} className="inverted-img" alt="left"  />
+            </button>
+            <button className='right-slide' onClick={() => handleSwipe(false)}>
+                <img src={arrow} alt="right"  />
+            </button>
             <div className="image-slider_dots_cont">    
                 {images.map((image, index) => (
                     <button
