@@ -12,18 +12,22 @@ const Home = () : React.JSX.Element => {
         {
             url: firstBG,
             paragraph: 'intro.first_p',
+            title: 'intro.first_h',
         },
         {
             url: secondBG,
             paragraph: 'intro.second_p',
+            title: 'intro.second_h',
         },
         {
             url: thirdBG,
             paragraph: 'intro.third_p',
+            title: 'intro.third_h',
         },
         {
             url: fourthBG,
             paragraph: 'intro.fourth_p',
+            title: 'intro.fourth_h',
         },
     ];
 

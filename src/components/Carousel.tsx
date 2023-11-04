@@ -6,13 +6,14 @@ interface CarouselProps {
     images: { 
         url: any;
         paragraph: string;
+        title: string;
     }[];
 }
 
 const Carousel = ({images}: CarouselProps) => {
 
     const [activeIndex, setActiveIndex] = useState<number>(0);
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     const handleSwipe = useCallback((isLeft: boolean) => {
 
@@ -30,15 +31,16 @@ const Carousel = ({images}: CarouselProps) => {
                 <div className="image-container" key={index} style={{ transform: `translateX(${-(activeIndex * 100)}%)` }}>
                     <img className="img-full"  src={image.url} alt={`Image ${index}`} />
                     <p className="image-slider_text">
+                        <h1>{t(image.title)}</h1>
                         {t(image.paragraph)}
                     </p>
                 </div>
             ))}
             <button className='right-slide left' onClick={() => handleSwipe(true)}>
-                <img src={arrow} className="inverted-img" alt="left"  />
+                <img src={arrow} className="inverted-img arrow-img" alt="left"  />
             </button>
             <button className='right-slide' onClick={() => handleSwipe(false)}>
-                <img src={arrow} alt="right"  />
+                <img src={arrow} className="arrow-img" alt="right"  />
             </button>
             <div className="image-slider_dots_cont">    
                 {images.map((image, index) => (

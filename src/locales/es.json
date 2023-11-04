@@ -2,10 +2,14 @@
     "translation": {
         "intro": {
             "more_info": "Mas información",
-            "first_p": "Hola soy Brayan Chavarro, un desarrollador full stack, I could help your company with my problem solving skills and expertise in diferent frameworks and architectures.",
-            "second_p": "These are some projects I've worked on, webpages with react and nextjs, desktop apps with electron and mobile apps with react native and flutter, and diferent apis and microservices.",
-            "third_p": "Here you can find a list of my skills and technologies I've worked with, and some certifications I've earned.",
-            "fourth_p": "If you want to know more about me, you can download my resume or contact me in the following links."
+            "first_p": "Soy un desarrollador full stack, Podria ser de gran ayuda con mi habilidad para presentar soluciones y conocimiento en diferentes frameworks y arquitecturas.",
+            "first_h": "Hola soy Brayan Chavarro",
+            "second_p": "Estos son unos proyectos en los que he trabajado, paginas web con react y nextjs, aplicaciones de escritorio en electron y aplicaciones mobiles con react native y flutter, diferentes apis y microservicios.",
+            "second_h": "Proyectos previos",
+            "third_p": "Aqui se encuentra una lista de mis habilidades y tecnologias con las que he trabajado, y algunas certificaciones que he conseguido.",
+            "third_h": "Certificaciones y Habilidades",
+            "fourth_p": "Si quieres saber mas sobre mi y contactarme, puedes usar los siguientes links.",
+            "fourth_h": "Contacto"
         }
     }
 }
