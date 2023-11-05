@@ -1,80 +1,18 @@
-import logoSrc from '../media/bLogos.png';
-import menuSrc from '../media/menu-black.png';
+import logoSrc from '../../media/bLogos.png';
+import menuSrc from '../../media/menu-black.png';
 import { useNavigate } from 'react-router-dom';
 import {useCallback, useEffect, useState} from 'react';
-
-interface inputProps {
-    method: () => void;
-}
-
-const NavItem = (props: { text: string, location: string, isOnTop: boolean}) => {
-
-    const scrollTo = useCallback(() : void => {
-
-        const element = document.getElementById(props.location);
-        if (element)
-            element.scrollIntoView({ behavior: 'smooth' });
-
-    }, [props.location]);
-
-    return (
-        <button
-            onClick={scrollTo}
-            className={!props.isOnTop ? 'item-nav' : 'item-nav item-w'}
-        >
-            {props.text}
-        </button>
-    );
-};
-
-interface IMenuProps {
-    close: () => void;
-}
-
-const MobileMenu = ({close} : IMenuProps) => {
-
-    const scrollTo = (location: string) : void => {
-
-        const element = document.getElementById(location);
-        if (element)
-        {
-            close();
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
-    return (
-        <div
-            className="mobile-menu"
-        >
-            <button
-                className="item-mobile-menu"
-                onClick={() => scrollTo('contact')}
-            >
-                Contact Me
-            </button>
-            <button
-                className="item-mobile-menu"
-                onClick={() => scrollTo('projects')}
-            >
-                Projects
-            </button>
-            <button
-                className="item-mobile-menu"
-                onClick={() => scrollTo('projects')}
-            >
-                Experience
-            </button>
-        </div>
-    );
-};
+import NavItem from './NavItem';
+import MobileMenu from './NavMenu';
+import {useTranslation} from 'react-i18next';
 
 const Navbar = () => {
 
     const navigate = useNavigate();
 
-    // state to keep track of the scroll position
+    const {t, i18n} = useTranslation();
     const [isOnTop, setIsOnTop] = useState<boolean>(true);
+    const [modalLanguagesOpen, setModalLanguagesOpen] = useState<boolean>(false);
     const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 600);
     const [openDrawer, setOpenDrawer] = useState<boolean>(false);
 
@@ -104,6 +42,12 @@ const Navbar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [handleScroll]);
+    
+    const scrollTo = (id : string) : void => {
+        const element = document.getElementById(id);
+        if (element) 
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
 
     return (
         <nav className={!isOnTop ? 'navbar nv-top shadow' : 'navbar'} >
@@ -136,20 +80,32 @@ const Navbar = () => {
 
                     <div className="item-container"> 
                         <NavItem
-                            text="Projects"
-                            location="projects"
+                            text={t('navbar.projects')}
+                            method={() => scrollTo('projects')}
                             isOnTop={isOnTop}
                         />
                         <NavItem
-                            text="Contact me"
-                            location="contact"
+                            text={t('navbar.skills')}
+                            method={() => scrollTo('contact')}
                             isOnTop={isOnTop}
                         />
                         <NavItem
-                            text="Experience"
-                            location="contact"
+                            text={t('navbar.change_lang')}
+                            method={() => setModalLanguagesOpen(true)}
                             isOnTop={isOnTop}
                         />
+                    </div>
+                )
+            }
+            {
+                modalLanguagesOpen && (
+                    <div className="modal-languages-back" onClick={() => setModalLanguagesOpen(false)}>
+                        <div className="modal-languages" onClick={() => {}}>
+                            <h3 className="modal-languages-title">Change Languages</h3>
+                            <button className="modal-languages-button" onClick={() => i18n.changeLanguage('en')}>English</button>
+                            <button className="modal-languages-button" onClick={() => i18n.changeLanguage('es')}>Spanish</button>
+                            <button className="modal-languages-button exit-alt" onClick={() => setModalLanguagesOpen(false)}>Close</button>
+                        </div>
                     </div>
                 )
             }

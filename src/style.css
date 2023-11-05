@@ -410,6 +410,58 @@ body * {
     margin-right: 10px;
     transition: 0s;
 }
+
+.modal-languages-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(5px);
+    background-color: #00000080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+.modal-languages {
+    height: 300px;
+    width: 300px;
+    background-color: #111;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.modal-languages-button {
+    height: 40px;
+    width: 90%;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #fff0;
+    border: 0px;
+    font-size: 15px;
+    font-family: 'Roboto';
+}
+
+.exit-alt {
+    color: #d11;
+}
+
+.modal-languages-button:hover {
+    color: var(--primary90);
+    background-color: var(--primary20);
+    transition: 0.5s;
+}
+
+.exit-alt:hover {
+    color: #f55;
+    background-color: #300;
+    transition: 0.5s;
+}
+
 .item-nav {
     height: 40px;
     margin: 0 18px 0 0;

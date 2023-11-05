@@ -1,5 +1,10 @@
 {
     "translation": {
+        "navbar" : {
+            "change_lang": "Cambiar el lenguaje",
+            "projects": "Proyectos",
+            "skills": "Habilidades"
+        },
         "intro": {
             "more_info": "Mas información",
             "first_p": "Soy un desarrollador full stack, Podria ser de gran ayuda con mi habilidad para presentar soluciones y conocimiento en diferentes frameworks y arquitecturas.",

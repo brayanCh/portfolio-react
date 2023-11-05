@@ -1,5 +1,10 @@
 {
     "translation": {
+        "navbar" : {
+            "change_lang": "Change language",
+            "projects": "Projects",
+            "skills": "Skills"
+        },
         "intro": {
             "more_info": "More info",
             "first_p": "I'm a full stack developer, I could help your company with my problem solving skills and expertise in diferent frameworks and architectures.",
