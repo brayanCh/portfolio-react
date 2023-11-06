@@ -1,10 +1,15 @@
+import {useTranslation} from 'react-i18next';
 
 interface IMenuProps {
     close: () => void;
+    languageSection: boolean;
+    setModalLanguagesOpen: (value: boolean) => void;
 }
 
-const MobileMenu = ({close} : IMenuProps) => {
+const MobileMenu = ({close, languageSection, setModalLanguagesOpen} : IMenuProps) => {
 
+    //@ts-ignore
+    const {t, i18n} = useTranslation();
     const scrollTo = (location: string) : void => {
 
         const element = document.getElementById(location);
@@ -14,29 +19,63 @@ const MobileMenu = ({close} : IMenuProps) => {
             element.scrollIntoView({ behavior: 'smooth' });
         }
     };
+    
+    const changeLanguage = (lang: string) : void => {
+        if (typeof lang !== 'string')
+            return;
+        i18n.changeLanguage(lang);
+        setModalLanguagesOpen(false);
+        close();
+    }
 
     return (
-        <div
-            className="mobile-menu"
-        >
-            <button
-                className="item-mobile-menu"
-                onClick={() => scrollTo('contact')}
-            >
-                Contact Me
-            </button>
-            <button
-                className="item-mobile-menu"
-                onClick={() => scrollTo('projects')}
-            >
-                Projects
-            </button>
-            <button
-                className="item-mobile-menu"
-                onClick={() => scrollTo('projects')}
-            >
-                Experience
-            </button>
+        <div className="mobile-menu-back" >
+            <div className="exit-back" onClick={() => close()} />
+            <div className="mobile-menu" onClick={() => {}}>
+                {!languageSection ? (
+                    <>
+                        <button
+                            className="item-mobile-menu"
+                            onClick={() => scrollTo('contact')}
+                        >
+                            {t('navbar.projects')}
+                        </button>
+                        <button
+                            className="item-mobile-menu"
+                            onClick={() => scrollTo('projects')}
+                        >
+                            {t('navbar.skills')}
+                        </button>
+                        <button
+                            className="item-mobile-menu"
+                            onClick={() => setModalLanguagesOpen(true)}
+                        >
+                            {t('navbar.change_lang')}
+                        </button>
+                    </>
+                ) : (
+                    <>
+                        <button
+                            className="item-mobile-menu"
+                            onClick={() => changeLanguage('en')}
+                        >
+                            {t('English')}
+                        </button>
+                        <button
+                            className="item-mobile-menu"
+                            onClick={() => changeLanguage('es')}
+                        >
+                            {t('Spanish')}
+                        </button>
+                        <button
+                            className="item-mobile-menu exit-alt"
+                            onClick={() => setModalLanguagesOpen(false)}
+                        >
+                            {t('Go back')}
+                        </button>
+                    </>
+                )}
+            </div>
         </div>
     );
 };

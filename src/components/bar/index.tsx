@@ -33,6 +33,10 @@ const Navbar = () => {
         setIsMobile(width < 1020);
     }, []);
 
+    useEffect(() => {
+        console.log('isMobile', isMobile);
+        console.log('openDrawer', openDrawer);
+    }, [isMobile, openDrawer]);
     // use effect to add and remove the scroll event listener
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -42,7 +46,7 @@ const Navbar = () => {
             window.removeEventListener('resize', checkMobile);
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [handleScroll]);
+    }, [handleScroll, checkMobile]);
 
     const scrollTo = (id : string) : void => {
         const element = document.getElementById(id);
@@ -71,7 +75,9 @@ const Navbar = () => {
                         />
                         { openDrawer && 
                         <MobileMenu 
+                            languageSection={modalLanguagesOpen}
                             close={() => setOpenDrawer(false)}
+                            setModalLanguagesOpen={setModalLanguagesOpen}
                         /> 
                         }
                     </>
@@ -99,7 +105,7 @@ const Navbar = () => {
                 )
             }
             {
-                modalLanguagesOpen && (
+                modalLanguagesOpen && !isMobile && (
                     <div className="modal-languages-back" onClick={() => setModalLanguagesOpen(false)}>
                         <div className="modal-languages" onClick={() => {}}>
                             <h3 className="modal-languages-title">Change Languages</h3>
