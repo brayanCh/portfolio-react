@@ -10,6 +10,7 @@ const Navbar = () => {
 
     const navigate = useNavigate();
 
+    //@ts-ignore
     const {t, i18n} = useTranslation();
     const [isOnTop, setIsOnTop] = useState<boolean>(true);
     const [modalLanguagesOpen, setModalLanguagesOpen] = useState<boolean>(false);
@@ -42,7 +43,7 @@ const Navbar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [handleScroll]);
-    
+
     const scrollTo = (id : string) : void => {
         const element = document.getElementById(id);
         if (element) 
@@ -69,9 +70,9 @@ const Navbar = () => {
                             src={menuSrc}
                         />
                         { openDrawer && 
-                            <MobileMenu 
-                                close={() => setOpenDrawer(false)}
-                            /> 
+                        <MobileMenu 
+                            close={() => setOpenDrawer(false)}
+                        /> 
                         }
                     </>
                 )

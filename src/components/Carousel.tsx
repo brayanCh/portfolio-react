@@ -13,6 +13,7 @@ interface CarouselProps {
 const Carousel = ({images}: CarouselProps) => {
 
     const [activeIndex, setActiveIndex] = useState<number>(0);
+    //@ts-ignore
     const { t } = useTranslation();
 
     const handleSwipe = useCallback((isLeft: boolean) => {
