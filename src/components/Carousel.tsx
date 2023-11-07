@@ -1,6 +1,7 @@
 import { useCallback, useState } from 'react';
 import arrow from '../media/LtoR.png';
 import { useTranslation } from 'react-i18next';
+import {ParallaxLayer} from '@react-spring/parallax';
 
 interface CarouselProps {
     images: { 
@@ -27,32 +28,34 @@ const Carousel = ({images}: CarouselProps) => {
     }, [activeIndex, images.length]);
 
     return (
-        <div className="image-slider shadow">
-            {images.map((image, index) => (
-                <div className="image-container" key={index} style={{ transform: `translateX(${-(activeIndex * 100)}%)` }}>
-                    <img className="img-full"  src={image.url} alt={`Image ${index}`} />
-                    <p className="image-slider_text">
-                        <h1>{t(image.title)}</h1>
-                        {t(image.paragraph)}
-                    </p>
-                </div>
-            ))}
-            <button className='right-slide left' onClick={() => handleSwipe(true)}>
-                <img src={arrow} className="inverted-img arrow-img" alt="left"  />
-            </button>
-            <button className='right-slide' onClick={() => handleSwipe(false)}>
-                <img src={arrow} className="arrow-img" alt="right"  />
-            </button>
-            <div className="image-slider_dots_cont">    
+        <ParallaxLayer offset={0}>
+            <div className="image-slider shadow">
                 {images.map((image, index) => (
-                    <button
-                        key={index}
-                        className={`image-slider_dot ${activeIndex === index ? 'active_dot' : ''}`}
-                        onClick={() => setActiveIndex(index)}
-                    />
+                    <div className="image-container" key={index} style={{ transform: `translateX(${-(activeIndex * 100)}%)` }}>
+                        <img className="img-full"  src={image.url} alt={`Image ${index}`} />
+                        <p className="image-slider_text">
+                            <h1>{t(image.title)}</h1>
+                            {t(image.paragraph)}
+                        </p>
+                    </div>
                 ))}
+                <button className='right-slide left' onClick={() => handleSwipe(true)}>
+                    <img src={arrow} className="inverted-img arrow-img" alt="left"  />
+                </button>
+                <button className='right-slide' onClick={() => handleSwipe(false)}>
+                    <img src={arrow} className="arrow-img" alt="right"  />
+                </button>
+                <div className="image-slider_dots_cont">    
+                    {images.map((image, index) => (
+                        <button
+                            key={index}
+                            className={`image-slider_dot ${activeIndex === index ? 'active_dot' : ''}`}
+                            onClick={() => setActiveIndex(index)}
+                        />
+                    ))}
+                </div>
             </div>
-        </div>
+        </ParallaxLayer>
     );
 };
 

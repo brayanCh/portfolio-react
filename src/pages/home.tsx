@@ -1,10 +1,10 @@
 import Carousel from '../components/Carousel';
-import ParallaxSection from './ParallaxSection';
-import PreviousWork from './previous';
+import SkillSections from './SkillSections';
 import firstBG from '../media/introCarousel/programming-code-colorful.jpg';
 import secondBG from '../media/introCarousel/project-wallpaper-1920x1200.jpg';
 import thirdBG from '../media/introCarousel/0e055bd6fc948f460fe50aa193ac36e6.jpg';
 import fourthBG from '../media/introCarousel/iJAYES_webp (Imagen WEBP, 1920 × 1080 píxeles) - Escalado.jpg';
+import {Parallax, ParallaxLayer} from '@react-spring/parallax';
 
 const Home = () : React.JSX.Element => {
 
@@ -15,14 +15,14 @@ const Home = () : React.JSX.Element => {
             title: 'intro.first_h',
         },
         {
-            url: secondBG,
-            paragraph: 'intro.second_p',
-            title: 'intro.second_h',
-        },
-        {
             url: thirdBG,
             paragraph: 'intro.third_p',
             title: 'intro.third_h',
+        },
+        {
+            url: secondBG,
+            paragraph: 'intro.second_p',
+            title: 'intro.second_h',
         },
         {
             url: fourthBG,
@@ -32,11 +32,12 @@ const Home = () : React.JSX.Element => {
     ];
 
     return (
-        <>
+        <Parallax pages={4}>
             <Carousel images={images}/>
-            <ParallaxSection />
-            <PreviousWork />
-        </>
+            <ParallaxLayer sticky={{start: 1, end: 2}} speed={0.5}>
+                <SkillSections />
+            </ParallaxLayer>
+        </Parallax>
     );
 };
 
