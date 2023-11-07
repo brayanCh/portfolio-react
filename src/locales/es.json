@@ -3,7 +3,10 @@
         "navbar" : {
             "change_lang": "Cambiar el lenguaje",
             "projects": "Proyectos",
-            "skills": "Habilidades"
+            "skills": "Habilidades",
+            "close": "Cerrar",
+            "es": "Español",
+            "en": "Ingles"
         },
         "intro": {
             "more_info": "Mas información",

@@ -26,7 +26,7 @@ const MobileMenu = ({close, languageSection, setModalLanguagesOpen} : IMenuProps
         i18n.changeLanguage(lang);
         setModalLanguagesOpen(false);
         close();
-    }
+    };
 
     return (
         <div className="mobile-menu-back" >
@@ -59,19 +59,19 @@ const MobileMenu = ({close, languageSection, setModalLanguagesOpen} : IMenuProps
                             className="item-mobile-menu"
                             onClick={() => changeLanguage('en')}
                         >
-                            {t('English')}
+                            {t('navbar.en')}
                         </button>
                         <button
                             className="item-mobile-menu"
                             onClick={() => changeLanguage('es')}
                         >
-                            {t('Spanish')}
+                            {t('navbar.es')}
                         </button>
                         <button
                             className="item-mobile-menu exit-alt"
                             onClick={() => setModalLanguagesOpen(false)}
                         >
-                            {t('Go back')}
+                            {t('navbar.close')}
                         </button>
                     </>
                 )}

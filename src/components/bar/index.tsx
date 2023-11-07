@@ -108,10 +108,25 @@ const Navbar = () => {
                 modalLanguagesOpen && !isMobile && (
                     <div className="modal-languages-back" onClick={() => setModalLanguagesOpen(false)}>
                         <div className="modal-languages" onClick={() => {}}>
-                            <h3 className="modal-languages-title">Change Languages</h3>
-                            <button className="modal-languages-button" onClick={() => i18n.changeLanguage('en')}>English</button>
-                            <button className="modal-languages-button" onClick={() => i18n.changeLanguage('es')}>Spanish</button>
-                            <button className="modal-languages-button exit-alt" onClick={() => setModalLanguagesOpen(false)}>Close</button>
+                            <h3 className="modal-languages-title">{t('navbar.change_lang')}</h3>
+                            <button
+                                className="modal-languages-button"
+                                onClick={() => i18n.changeLanguage('en')}
+                            >
+                                {t('navbar.en')}
+                            </button>
+                            <button
+                                className="modal-languages-button"
+                                onClick={() => i18n.changeLanguage('es')}
+                            >
+                                {t('navbar.es')}
+                            </button>
+                            <button
+                                className="modal-languages-button exit-alt"
+                                onClick={() => setModalLanguagesOpen(false)}
+                            >
+                                {t('navbar.close')}
+                            </button>
                         </div>
                     </div>
                 )

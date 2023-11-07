@@ -27,7 +27,7 @@ const Carousel = ({images}: CarouselProps) => {
     }, [activeIndex, images.length]);
 
     return (
-        <div className="image-slider">
+        <div className="image-slider shadow">
             {images.map((image, index) => (
                 <div className="image-container" key={index} style={{ transform: `translateX(${-(activeIndex * 100)}%)` }}>
                     <img className="img-full"  src={image.url} alt={`Image ${index}`} />

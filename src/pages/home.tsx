@@ -1,5 +1,5 @@
 import Carousel from '../components/Carousel';
-import Content from './content';
+import ParallaxSection from './ParallaxSection';
 import PreviousWork from './previous';
 import firstBG from '../media/introCarousel/programming-code-colorful.jpg';
 import secondBG from '../media/introCarousel/project-wallpaper-1920x1200.jpg';
@@ -34,7 +34,7 @@ const Home = () : React.JSX.Element => {
     return (
         <>
             <Carousel images={images}/>
-            <Content />
+            <ParallaxSection />
             <PreviousWork />
         </>
     );

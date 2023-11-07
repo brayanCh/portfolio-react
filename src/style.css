@@ -610,6 +610,18 @@ body * {
     left: 2px;
 }
 
+/* parallax */
+
+.parallax-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+
 @keyframes moving {
   0%   {right: -100%;}
   100% {right: 0px;}
@@ -622,27 +634,4 @@ body * {
     .right-slide {
         width: 150px;
     }
-    /*
-    .column-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .column-container div,p, img{
-        margin-top: 30px;
-    }
-    .paragraph{
-        margin-top: 20px;
-    }
-    .column-container img, .pagecard img{
-        width: 90%;
-        height: auto;
-    }
-    .paragraph p{
-        max-width: 90%;
-    }
-    .pagecard{
-        max-width: 90%;
-    }
-    */
 }

@@ -3,7 +3,10 @@
         "navbar" : {
             "change_lang": "Change language",
             "projects": "Projects",
-            "skills": "Skills"
+            "skills": "Skills",
+            "close": "Close",
+            "es": "Spanish",
+            "en": "English"
         },
         "intro": {
             "more_info": "More info",
