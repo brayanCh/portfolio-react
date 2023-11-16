@@ -632,10 +632,19 @@ code {
 
 .container-fluid {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 100vh;
+}
+
+.black-square-cont {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
 }
 
 .text-frontend {
@@ -646,8 +655,28 @@ code {
     background-color: #f000;
     color: #222;
 }
+.img-flutter {
+    width: 600px;
+}
 
-.text-frontend em {
+.darkstyle {
+    width: 600px;
+    color: #fff;
+}
+
+.em-first {
+    color: var(--primary90);
+    font-style: normal;
+}
+.em-second {
+    color: var(--primary95);
+    font-style: normal;
+}
+.em-third {
+    color: var(--primary80);
+    font-style: normal;
+}
+.text-frontend-em {
     font-style: normal;
     color: var(--primary60);
 }

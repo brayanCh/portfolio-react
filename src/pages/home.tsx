@@ -1,10 +1,11 @@
 import Carousel from '../components/Carousel';
-import SkillSections from './SkillSections';
+import FirstFrontendExperience from './FirstFrontendExperience';
 import firstBG from '../media/introCarousel/programming-code-colorful.jpg';
 import secondBG from '../media/introCarousel/project-wallpaper-1920x1200.jpg';
 import thirdBG from '../media/introCarousel/0e055bd6fc948f460fe50aa193ac36e6.jpg';
 import fourthBG from '../media/introCarousel/iJAYES_webp (Imagen WEBP, 1920 × 1080 píxeles) - Escalado.jpg';
 import {Parallax, ParallaxLayer} from '@react-spring/parallax';
+import SecondFrontendExperience from './SecondFrontendExperience';
 
 const Home = () : React.JSX.Element => {
 
@@ -32,12 +33,11 @@ const Home = () : React.JSX.Element => {
     ];
 
     return (
-        <Parallax pages={4}>
+        <>
             <Carousel images={images}/>
-            <ParallaxLayer sticky={{start: 1, end: 2}} speed={0.5}>
-                <SkillSections />
-            </ParallaxLayer>
-        </Parallax>
+            <FirstFrontendExperience />
+            <SecondFrontendExperience />
+        </>
     );
 };
 

@@ -16,16 +16,13 @@ const styles = {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        width: '50%',
-        right: 0,
-        top: 0,
-        background: '#f000',
     } as React.CSSProperties,
     align_center: {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'flex-end',
         background: '#00f0',
+        zIndex: 0,
     }
 };
 
@@ -35,12 +32,14 @@ const ParallaxSection = () => {
     const { t } = useTranslation();
 
     return (
-        <div className='container-fluid'>
-            <p className="text-frontend">
-                {`${t('parallax.frontend.first')} `}
-                <em className="text-frontend-em">{`${t('parallax.frontend.second')} `}</em>
-            </p>
-            <div style={styles.right_image}>
+        <div className='container-fluid' style={{zIndex: 1, position: 'sticky'}}>
+            <div className="black-square-cont" style={{backgroundColor: '#fff0'}}>
+                <p className="text-frontend">
+                    {`${t('parallax.frontend.first')} `}
+                    <em className="text-frontend-em">{`${t('parallax.frontend.second')} `}</em>
+                </p>
+            </div>
+            <div className="black-square-cont" style={{backgroundColor: '#fff0'}}>
                 <img src={mobileReactNative} alt="React Native" className="img-fluid" />
             </div>
         </div>
@@ -48,8 +47,5 @@ const ParallaxSection = () => {
 };
 
 /*
-                    {`${t('parallax.frontend.third')} `}
-                    <em className="text-frontend-em">{`${t('parallax.frontend.fourth')} `}</em>
-                    {`${t('parallax.frontend.five')} `}
  */
 export default ParallaxSection;
