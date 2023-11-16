@@ -20,12 +20,12 @@ module.exports = {
         '@typescript-eslint'
     ],
     'rules': {
-        "@typescript-eslint/ban-ts-comment": "off",
-        "@typescript-eslint/no-empty-function": "off",
+        '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/no-empty-function': 'off',
         'react/react-in-jsx-scope': 'off',
         'indent': [
             'error',
-            4
+            2
         ],
         'linebreak-style': [
             'error',

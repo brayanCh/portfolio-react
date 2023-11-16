@@ -1,23 +1,51 @@
 {
-    "translation": {
-        "navbar" : {
-            "change_lang": "Cambiar el lenguaje",
-            "projects": "Proyectos",
-            "skills": "Habilidades",
-            "close": "Cerrar",
-            "es": "Español",
-            "en": "Ingles"
-        },
-        "intro": {
-            "more_info": "Mas información",
-            "first_p": "Soy un desarrollador full stack, Podria ser de gran ayuda con mi habilidad para presentar soluciones y conocimiento en diferentes frameworks y arquitecturas.",
-            "first_h": "Hola soy Brayan Chavarro",
-            "second_p": "Estos son unos proyectos en los que he trabajado, paginas web con react y nextjs, aplicaciones de escritorio en electron y aplicaciones mobiles con react native y flutter, diferentes apis y microservicios.",
-            "second_h": "Proyectos previos",
-            "third_p": "Aqui se encuentra una lista de mis habilidades y tecnologias con las que he trabajado, y algunas certificaciones que he conseguido.",
-            "third_h": "Certificaciones y Habilidades",
-            "fourth_p": "Si quieres saber mas sobre mi y contactarme, puedes usar los siguientes links.",
-            "fourth_h": "Contacto"
-        }
+  "translation": {
+    "navbar" : {
+      "change_lang": "Cambiar el lenguaje",
+      "projects": "Proyectos",
+      "skills": "Habilidades",
+      "close": "Cerrar",
+      "es": "Español",
+      "en": "Ingles"
+    },
+    "intro": {
+      "more_info": "Mas información",
+      "first_p": "Soy un desarrollador full stack, Podria ser de gran ayuda con mi habilidad para presentar soluciones y conocimiento en diferentes frameworks y arquitecturas.",
+      "first_h": "Hola soy Brayan Chavarro",
+      "second_p": "Estos son unos proyectos en los que he trabajado, paginas web con react y nextjs, aplicaciones de escritorio en electron y aplicaciones mobiles con react native y flutter, diferentes apis y microservicios.",
+      "second_h": "Proyectos previos",
+      "third_p": "Aqui se encuentra una lista de mis habilidades y tecnologias con las que he trabajado, y algunas certificaciones que he conseguido.",
+      "third_h": "Certificaciones y Habilidades",
+      "fourth_p": "Si quieres saber mas sobre mi y contactarme, puedes usar los siguientes links.",
+      "fourth_h": "Contacto"
+    },
+    "parallax": {
+      "frontend": {
+        "first": "He trabajado con diferentes frameworks de frontend, para crear interfaces graficas en la web y plataformas mobiles, como",
+        "second": "react, nextjs, react native, solid.js y flutter.",
+        "third": "He usado diferentes librerias para manejar el estado de las aplicaciones como",
+        "fourth": "redux,",
+        "five": "diferentes frameworks de css como",
+        "six": "bootstrap, material ui y tailwind css,",
+        "seven": "y sdks para diferentes integraciones con la nube como",
+        "eight": "firebase y aws amplify."
+      },
+      "backend": {
+        "first": "I have worked in the backend, writing",
+        "second": "REST apis, graphql apis and microservices,",
+        "third": "using languages and frameworks like",
+        "fourth": "nodejs, express, python, django, rust, actix and go.",
+        "five": "In the database space I've worked with",
+        "six": "mongodb, postgresql, redis, dynamodb and firebase,",
+        "seven": "I also worked with the following services in aws",
+        "eight": "cognito for authentification, s3 for storage, lambda for serverless functions, api gateway for api management, sns for push notifications and sms and fargate for serverless docker deployments."
+      },
+      "certifications": {
+        "first": "These are some certifications I've earned",
+        "second": "meta frontend certification",
+        "third": "Architecting Solutions on AWS",
+        "fourth": "Introduction to Designing Data Lakes on AWS"
+      }
     }
+  }
 }

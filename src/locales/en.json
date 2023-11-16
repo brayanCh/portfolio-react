@@ -1,35 +1,51 @@
 {
-    "translation": {
-        "navbar" : {
-            "change_lang": "Change language",
-            "projects": "Projects",
-            "skills": "Skills",
-            "close": "Close",
-            "es": "Spanish",
-            "en": "English"
-        },
-        "intro": {
-            "more_info": "More info",
-            "first_p": "I'm a full stack developer, I could help your company with my problem solving skills and expertise in diferent frameworks and architectures.",
-            "first_h": "Hello I'm Brayan Chavarro",
-            "second_p": "These are some projects I've worked on, webpages, desktop and mobile apps in the frontend, and diferent apis and microservices in the backend.",
-            "second_h": "Projects",
-            "third_p": "Here you can find a list of my skills and technologies I've worked with, and some certifications I've earned.",
-            "third_h": "Certifications and Skills",
-            "fourth_p": "If you want to know more about me and contact me, you can use the following links.",
-            "fourth_h": "Contact"
-        },
-        "parallax": {
-            "frontend": {
-                "first": "I've worked with diferent frontend frameworks for user interfaces in the web and mobile platforms like",
-                "second": "react, nextjs, react native, solid.js and flutter.",
-                "third": "I've used diferent libraries that handle state like",
-                "fourth": "redux,",
-                "five": "diferent css frameworks like",
-                "six": "bootstrap, material ui and tailwindcss,",
-                "seven": "and sdks for diferent cloud integrations like",
-                "eight": "firebase and aws amplify."
-            }
-        }
+  "translation": {
+    "navbar" : {
+      "change_lang": "Change language",
+      "projects": "Projects",
+      "skills": "Skills",
+      "close": "Close",
+      "es": "Spanish",
+      "en": "English"
+    },
+    "intro": {
+      "more_info": "More info",
+      "first_p": "I'm a full stack developer, I could help your company with my problem solving skills and expertise in diferent frameworks and architectures.",
+      "first_h": "Hello I'm Brayan Chavarro",
+      "second_p": "These are some projects I've worked on, webpages, desktop and mobile apps in the frontend, and diferent apis and microservices in the backend.",
+      "second_h": "Projects",
+      "third_p": "Here you can find a list of my skills and technologies I've worked with, and some certifications I've earned.",
+      "third_h": "Certifications and Skills",
+      "fourth_p": "If you want to know more about me and contact me, you can use the following links.",
+      "fourth_h": "Contact"
+    },
+    "parallax": {
+      "frontend": {
+        "first": "I've worked with diferent frontend frameworks for user interfaces in the web and mobile platforms like",
+        "second": "react, nextjs, react native, solid.js and flutter.",
+        "third": "I've used diferent libraries that handle state like",
+        "fourth": "redux,",
+        "five": "diferent css frameworks like",
+        "six": "bootstrap, material ui and tailwind css,",
+        "seven": "and sdks for diferent cloud integrations like",
+        "eight": "firebase and aws amplify."
+      },
+      "backend": {
+        "first": "I have worked in the backend, writing",
+        "second": "REST apis, graphql apis and microservices,",
+        "third": "using languages and frameworks",
+        "fourth": "nodejs, express, python, django, rust, actix and go.",
+        "five": "In the database space I've worked with",
+        "six": "mongodb, postgresql, redis, dynamodb and firebase,",
+        "seven": "I also worked with the following services in aws",
+        "eight": "cognito for authentification, s3 for storage, lambda for serverless functions, api gateway for api management, sns for push notifications and sms and fargate for serverless docker deployments."
+      },
+      "certifications": {
+        "first": "These are some certifications I've earned",
+        "second": "meta frontend certification",
+        "third": "Architecting Solutions on AWS",
+        "fourth": "Introduction to Designing Data Lakes on AWS"
+      }
     }
+  }
 }
