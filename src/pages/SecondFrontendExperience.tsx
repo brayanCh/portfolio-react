@@ -10,7 +10,8 @@ const SecondFrontendExperience = () => {
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const positionOnScreen: number = window.scrollY/window.innerHeight;
-      if (positionOnScreen < 2) {
+      if (positionOnScreen < 2 || positionOnScreen > 4) {
+        console.log('returning');
         return;
       }
       const section = document.getElementById('second-frontend-sec');

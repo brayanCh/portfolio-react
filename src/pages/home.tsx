@@ -7,6 +7,7 @@ import fourthBG from '../media/introCarousel/iJAYES_webp (Imagen WEBP, 1920 × 1
 import SecondFrontendExperience from './SecondFrontendExperience';
 import FirstBackendExperience from './FirstBackendExperience';
 import SecondBackendExperience from './SecondBackendExperience';
+import Certifications from './Certifications';
 
 const Home = () : React.JSX.Element => {
 
@@ -40,6 +41,7 @@ const Home = () : React.JSX.Element => {
       <SecondFrontendExperience />
       <FirstBackendExperience />
       <SecondBackendExperience />
+      <Certifications />
     </>
   );
 };

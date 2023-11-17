@@ -15,7 +15,11 @@ const SecondBackendExperience = () => {
       }
       const section = document.getElementById('section-st');
       if (section) {
-        section.style.transform = `translateY(${(positionOnScreen - 4) * 100}%)`;
+        if (positionOnScreen > 5) {
+          section.style.transform = 'translateY(0)';
+        } else {
+          section.style.transform = `translateY(${(positionOnScreen - 4) * 100}%)`;
+        }
       }
       const blackCircle = document.getElementById('black-circle');
       if (blackCircle) {
@@ -38,7 +42,13 @@ const SecondBackendExperience = () => {
       }
       const section2 = document.getElementById('section-fi');
       if (section2) {
-        section2.style.transform = `translateY(${(positionOnScreen - 5) * 100}%)`;
+        if (positionOnScreen < 6) {
+          console.log(positionOnScreen, 'blink');
+          section2.style.transform = `translateY(${(positionOnScreen - 5) * 100}%)`;
+        } else {
+          section2.style.transform = `translateY(${100}%)`;
+        }
+
       }
     });
   });

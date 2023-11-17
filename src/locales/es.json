@@ -42,10 +42,12 @@
         "eight": "cognito para la autentificacion, s3 para almacenamiento, lambda para funciones serverless y api gateway para el manejo de apis."
       },
       "certifications": {
-        "first": "These are some certifications I've earned",
-        "second": "meta frontend certification",
-        "third": "Architecting Solutions on AWS",
-        "fourth": "Introduction to Designing Data Lakes on AWS"
+        "title-meta": "Meta Frontend Developer",
+        "text-meta": "This certificate garanties that I have the essential skills for frontend, like writing semantic html, css and javascript, using git for version control, unitary tests and React.",
+        "title-arch-aws": "Architecting solutions on AWS",
+        "text-arch-aws": "These course centers around aws, and how to use the diferent services to build a scalable and secure application.",
+        "title-datalake-aws": "Introduction to Designing Data Lakes on AWS",
+        "text-datalake-aws": "It's about the diferent services for processing data, doing data lakes with s3, queries with athena and using serverless hadoop clusters."
       }
     }
   }
