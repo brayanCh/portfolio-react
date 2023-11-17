@@ -36,9 +36,9 @@
         "third": "using languages and frameworks",
         "fourth": "nodejs, express, python, django, rust, actix and go.",
         "five": "In the database space I've worked with",
-        "six": "mongodb, postgresql, redis, dynamodb and firebase,",
-        "seven": "I also worked with the following services in aws",
-        "eight": "cognito for authentification, s3 for storage, lambda for serverless functions, api gateway for api management, sns for push notifications and sms and fargate for serverless docker deployments."
+        "six": "mongodb, postgresql, mysql, redis, dynamodb and firebase.",
+        "seven": "I also worked with the following services in aws,",
+        "eight": "cognito for authentification, s3 for storage, lambda for serverless functions and api gateway for api management."
       },
       "certifications": {
         "first": "These are some certifications I've earned",

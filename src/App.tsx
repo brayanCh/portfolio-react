@@ -7,15 +7,15 @@ import Home from './pages/home';
 
 const App = () => {
     
-    return (
-        <Router>
-            <Navbar /> 
-            <Routes>
-                <Route path="/portfolio-react" element={<Home />}/>
-                <Route path="*" element={<Home />}/>
-            </Routes>
-        </Router>
-    );
+  return (
+    <Router>
+      <Navbar /> 
+      <Routes>
+        <Route path="/portfolio-react" element={<Home />}/>
+        <Route path="*" element={<Home />}/>
+      </Routes>
+    </Router>
+  );
 };
 
 export default App;

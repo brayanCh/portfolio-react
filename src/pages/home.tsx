@@ -6,6 +6,7 @@ import thirdBG from '../media/introCarousel/0e055bd6fc948f460fe50aa193ac36e6.jpg
 import fourthBG from '../media/introCarousel/iJAYES_webp (Imagen WEBP, 1920 × 1080 píxeles) - Escalado.jpg';
 import SecondFrontendExperience from './SecondFrontendExperience';
 import FirstBackendExperience from './FirstBackendExperience';
+import SecondBackendExperience from './SecondBackendExperience';
 
 const Home = () : React.JSX.Element => {
 
@@ -38,6 +39,7 @@ const Home = () : React.JSX.Element => {
       <FirstFrontendExperience />
       <SecondFrontendExperience />
       <FirstBackendExperience />
+      <SecondBackendExperience />
     </>
   );
 };

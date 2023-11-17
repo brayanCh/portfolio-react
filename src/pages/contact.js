@@ -4,35 +4,35 @@ import ButtonForm from '../components/buttonForm';
 
 const Contact = () => {
 
-    const [email, setEmail] = useInput('');
-    const [name, setName] = useInput('');
-    const [subject, setSubject] = useInput('');
-    const [content, setContent] = useInput('');
+  const [email, setEmail] = useInput('');
+  const [name, setName] = useInput('');
+  const [subject, setSubject] = useInput('');
+  const [content, setContent] = useInput('');
 
-    const enviar = e => {
-        e.preventDefault();
-    };
+  const enviar = e => {
+    e.preventDefault();
+  };
 
-    return(
-        <form
-            className="oval-module flexcenter shadow form-cont"
-            onSubmit={enviar}
-            id="contact"
-        >
-            <h2> Contacto </h2>
+  return(
+    <form
+      className="oval-module flexcenter shadow form-cont"
+      onSubmit={enviar}
+      id="contact"
+    >
+      <h2> Contacto </h2>
             
-            <EmailInput message="Email" value={email} setter={setEmail}/>
+      <EmailInput message="Email" value={email} setter={setEmail}/>
 
-            <Input message="Nombre" value={name} setter={setName}/>
+      <Input message="Nombre" value={name} setter={setName}/>
 
-            <Input message="Asunto" value={subject} setter={setSubject}/>
+      <Input message="Asunto" value={subject} setter={setSubject}/>
 
-            <InputArea message="Contenido" value={content} setter={setContent}/>
+      <InputArea message="Contenido" value={content} setter={setContent}/>
 
-            <ButtonForm>Enviar</ButtonForm>
+      <ButtonForm>Enviar</ButtonForm>
             
-        </form>
-    );
+    </form>
+  );
 };
 
 export default Contact;

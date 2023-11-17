@@ -4,18 +4,18 @@ import en from './en.json';
 import es from './es.json';
 
 i18n
-    .use(initReactI18next)
-    .init({
-        resources: {
-            en: en,
-            es: es,
-        },
-        fallbackLng: 'en',
-        debug: true,
-        interpolation: {
-            escapeValue: false,
-        },
-    });
+  .use(initReactI18next)
+  .init({
+    resources: {
+      en: en,
+      es: es,
+    },
+    fallbackLng: 'en',
+    debug: true,
+    interpolation: {
+      escapeValue: false,
+    },
+  });
 
 export default i18n;
 

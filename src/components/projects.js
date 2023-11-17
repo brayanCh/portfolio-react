@@ -1,38 +1,38 @@
-import {useEffect, useState} from "react";
-import exitSrc from "../media/x.png"
+import {useEffect, useState} from 'react';
+import exitSrc from '../media/x.png';
 
 const Project = props => {
 
-    const [isDisplayed, setDisplay] = useState(false) 
+  const [isDisplayed, setDisplay] = useState(false); 
 
-    useEffect(() => setTimeout(() => setDisplay("true"), 20) ,[])
+  useEffect(() => setTimeout(() => setDisplay('true'), 20) ,[]);
 
-    const cerrar = () => {
-        setDisplay(false);
-        setTimeout(props.exit, 300);
-    }
+  const cerrar = () => {
+    setDisplay(false);
+    setTimeout(props.exit, 300);
+  };
 
-    return (
-        <div className={!isDisplayed ? "project hidden-pr" : "project"}>
+  return (
+    <div className={!isDisplayed ? 'project hidden-pr' : 'project'}>
 
-            <div className="head flexcenter">
-                <h2>{props.title} || <a href={props.link}> Link </a> </h2>
-            </div>
+      <div className="head flexcenter">
+        <h2>{props.title} || <a href={props.link}> Link </a> </h2>
+      </div>
         
-            <div className={!isDisplayed ? "wrapper-exit-hd" : "wrapper-exit"} onClick={cerrar} >
-                <img src={exitSrc} alt="exit" />
-            </div>
+      <div className={!isDisplayed ? 'wrapper-exit-hd' : 'wrapper-exit'} onClick={cerrar} >
+        <img src={exitSrc} alt="exit" />
+      </div>
 
-            <div className="project-content">
+      <div className="project-content">
 
-                {props.children}
+        {props.children}
 
-            </div>
-        </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
 
-        //<img src={} alt="" />
+//<img src={} alt="" />
 
 export default Project;

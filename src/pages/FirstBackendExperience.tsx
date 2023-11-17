@@ -13,15 +13,15 @@ const FirstBackendExperience = () => {
       if (positionOnScreen < 3) {
         return;
       }
-      const section = document.getElementById('first-frontend-sec');
+      const section = document.getElementById('first-backend-sec');
       if (section) {
-        section.style.transform = `translateY(${(positionOnScreen - 3) * 80}%)`;
+        section.style.transform = `translateY(${(positionOnScreen - 3) * 70}%)`;
       }
     });
   });
 
   return (
-    <div className="container-fluid" style={{zIndex: 3}}>
+    <div className="container-fluid" id="first-backend-sec" style={{zIndex: 3}}>
       <div className="black-square-cont">
         <p className="text-frontend darkstyle" style={{zIndex: 0}}>
           {`${t('parallax.backend.first')} `}
