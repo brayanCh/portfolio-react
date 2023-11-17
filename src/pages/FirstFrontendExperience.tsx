@@ -11,12 +11,16 @@ const ParallaxSection = () => {
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const positionOnScreen: number = window.scrollY/window.innerHeight;
-      if (positionOnScreen < 1) {
+      if (positionOnScreen < 1 ) {
         return;
       }
       const section = document.getElementById('first-frontend-sec');
       if (section) {
-        section.style.transform = `translateY(${(positionOnScreen - 1) * 100}%)`;
+        if (positionOnScreen > 3) {
+          section.style.transform = 'translateY(0)';
+        } else {
+          section.style.transform = `translateY(${(positionOnScreen - 1) * 100}%)`;
+        }
       }
     });
   });

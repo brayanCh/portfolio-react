@@ -3,6 +3,7 @@
     "navbar" : {
       "change_lang": "Cambiar el lenguaje",
       "projects": "Proyectos",
+      "certifications": "Certificaciones",
       "skills": "Habilidades",
       "close": "Cerrar",
       "es": "Español",
@@ -31,14 +32,14 @@
         "eight": "firebase y aws amplify."
       },
       "backend": {
-        "first": "I have worked in the backend, writing",
-        "second": "REST apis, graphql apis and microservices,",
-        "third": "using languages and frameworks like",
-        "fourth": "nodejs, express, python, django, rust, actix and go.",
-        "five": "In the database space I've worked with",
-        "six": "mongodb, postgresql, redis, dynamodb and firebase,",
-        "seven": "I also worked with the following services in aws",
-        "eight": "cognito for authentification, s3 for storage, lambda for serverless functions, api gateway for api management, sns for push notifications and sms and fargate for serverless docker deployments."
+        "first": "Previamente he trabajado en el backend, desarrollando",
+        "second": "REST apis, graphql apis y microservicios,",
+        "third": "usando lenguajes y frameworks como",
+        "fourth": "nodejs, express, python, django, rust, actix y go.",
+        "five": "Del lado de las bases de datos he usado",
+        "six": "mongodb, postgresql, redis, dynamodb y firebase.",
+        "seven": "Tambien he desarrollado con los siguientes servicios de aws",
+        "eight": "cognito para la autentificacion, s3 para almacenamiento, lambda para funciones serverless y api gateway para el manejo de apis."
       },
       "certifications": {
         "first": "These are some certifications I've earned",

@@ -51,7 +51,7 @@ const Navbar = () => {
   const scrollTo = (id : string) : void => {
     const element = document.getElementById(id);
     if (element) 
-      element.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      element.scrollIntoView({ behavior: 'smooth', block: 'end' });
   };
 
   return (
@@ -93,6 +93,11 @@ const Navbar = () => {
             />
             <NavItem
               text={t('navbar.skills')}
+              method={() => scrollTo('first-frontend-sec')}
+              isOnTop={isOnTop}
+            />
+            <NavItem
+              text={t('navbar.certifications')}
               method={() => scrollTo('first-frontend-sec')}
               isOnTop={isOnTop}
             />
