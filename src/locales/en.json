@@ -40,15 +40,15 @@
         "six": "mongodb, postgresql, mysql, redis, dynamodb and firebase.",
         "seven": "I also worked with the following services in aws,",
         "eight": "cognito for authentification, s3 for storage, lambda for serverless functions and api gateway for api management."
-      },
-      "certifications": {
-        "title-meta": "Meta Frontend Developer",
-        "text-meta": "This certificate garanties that I have the essential skills for frontend, like writing semantic html, css and javascript, using git for version control, unitary tests and React.",
-        "title-arch-aws": "Architecting solutions on AWS",
-        "text-arch-aws": "These course centers around aws, and how to use the diferent services to build a scalable and secure application.",
-        "title-datalake-aws": "Introduction to Designing Data Lakes on AWS",
-        "text-datalake-aws": "It's about the diferent services for processing data, doing data lakes with s3, queries with athena and using serverless hadoop clusters."
       }
+    },
+    "certifications": {
+      "title-meta": "Meta Frontend Developer",
+      "text-meta": "This certificate garanties that I have the essential skills for frontend, like writing semantic html, css and javascript, using git for version control, unitary tests and React.",
+      "title-arch-aws": "Architecting solutions on AWS",
+      "text-arch-aws": "This course centers around aws, and how to use the diferent services to build a scalable and secure application.",
+      "title-datalake-aws": "Introduction to Designing Data Lakes on AWS",
+      "text-datalake-aws": "It's about the diferent services for processing data, doing data lakes with s3, queries with athena and using serverless hadoop clusters."
     }
   }
 }

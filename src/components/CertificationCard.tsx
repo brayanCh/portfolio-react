@@ -1,6 +1,5 @@
-import { useTranslation } from 'react-i18next';
 
-interface CertificationCardProps {
+export interface CertificationCardProps {
   title: string;
   description: string;
   link: string;
@@ -8,16 +7,15 @@ interface CertificationCardProps {
 
 const CertificationCard = ({ title, description, link }: CertificationCardProps) => {
 
-  //@ts-ignore
-  const { t } = useTranslation();
-
   return (
-    <div className="cert-card">
+    <a className="cert-card" href={link}>
+      <div className='cert-full' />
       <h5 className="cert-title">{title}</h5>
       <p className="cert-text">{description}</p>
-      <a href={link} target="_blank" rel="noreferrer" className="btn btn-primary">{}</a>
-    </div>
+    </a>
   );
 };
 
+
+//<a href={link} target="_blank" rel="noreferrer" className="btn btn-primary">{}</a>
 export default CertificationCard;

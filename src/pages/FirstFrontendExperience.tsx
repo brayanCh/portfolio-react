@@ -7,7 +7,6 @@ const ParallaxSection = () => {
   //@ts-ignore
   const { t } = useTranslation();
 
-
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const positionOnScreen: number = window.scrollY/window.innerHeight;
