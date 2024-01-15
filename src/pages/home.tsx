@@ -8,6 +8,7 @@ import SecondFrontendExperience from './SecondFrontendExperience';
 import FirstBackendExperience from './FirstBackendExperience';
 import SecondBackendExperience from './SecondBackendExperience';
 import Certifications from './Certifications';
+import Projects from './Projects';
 
 const Home = () : React.JSX.Element => {
 
@@ -42,6 +43,7 @@ const Home = () : React.JSX.Element => {
       <FirstBackendExperience />
       <SecondBackendExperience />
       <Certifications />
+      <Projects />
     </>
   );
 };

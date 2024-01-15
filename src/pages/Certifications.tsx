@@ -1,4 +1,4 @@
-import {useEffect} from 'react';
+import {useCallback, useEffect} from 'react';
 import {useTranslation} from 'react-i18next';
 import CertificationCard, {CertificationCardProps} from '../components/CertificationCard';
 
@@ -25,20 +25,25 @@ const Certifications = () => {
     },
   ];
 
+  const scrollElem = useCallback((id: string, positionOnScreen: number, fromTop: boolean) => {
+    const section = document.getElementById(id);
+    if (section) {
+      if (positionOnScreen > 8) {
+        section.style.transform = 'translateY(0)';
+      } else {
+        section.style.transform = `translateY(${((fromTop ? 1 : -1 ) * (positionOnScreen - 7)) * 80}%)`;
+      }
+    }
+  }, []);
+
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const positionOnScreen: number = window.scrollY/window.innerHeight;
       if (positionOnScreen < 6 ) {
         return;
       }
-      const section = document.getElementById('cert-bg');
-      if (section) {
-        if (positionOnScreen > 8) {
-          section.style.transform = 'translateY(0)';
-        } else {
-          section.style.transform = `translateY(${(-(positionOnScreen - 7)) * 80}%)`;
-        }
-      }
+      scrollElem('cert-bg1', positionOnScreen, false);
+      scrollElem('cert-bg2', positionOnScreen, true);
     });
   });
 
@@ -50,8 +55,11 @@ const Certifications = () => {
           <CertificationCard {...cert} key={index} />
         ))}
       </div>
-      <div id="cert-bg">
+      <div id="cert-bg1" className="cert-bg">
         <h3>{t('navbar.certifications').split('').reduce((a, b) => a + '\n'+ b)}</h3>
+      </div>
+      <div id="cert-bg2" className="cert-bg">
+        <h3>{'F\nr\no\nn\nt\ne\nn\nd'}</h3>
       </div>
     </div>
   );

@@ -48,10 +48,15 @@ const Navbar = () => {
     };
   }, [handleScroll, checkMobile]);
 
-  const scrollTo = (id : string) : void => {
+  const scrollTo = (id : string, isStart: boolean = false) : void => {
     const element = document.getElementById(id);
-    if (element) 
-      element.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    if (element)  {
+      if (isStart) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        element.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      }
+    }
   };
 
   return (
@@ -88,16 +93,16 @@ const Navbar = () => {
           <div className="item-container"> 
             <NavItem
               text={t('navbar.projects')}
-              method={() => scrollTo('projects')}
-              isOnTop={isOnTop}
-            />
-            <NavItem
-              text={t('navbar.skills')}
-              method={() => scrollTo('first-frontend-sec')}
+              method={() => scrollTo('projects-container', true)}
               isOnTop={isOnTop}
             />
             <NavItem
               text={t('navbar.certifications')}
+              method={() => scrollTo('certification-container')}
+              isOnTop={isOnTop}
+            />
+            <NavItem
+              text={t('navbar.skills')}
               method={() => scrollTo('first-frontend-sec')}
               isOnTop={isOnTop}
             />

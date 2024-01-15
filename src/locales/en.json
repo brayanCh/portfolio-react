@@ -49,6 +49,9 @@
       "text-arch-aws": "This course centers around aws, and how to use the diferent services to build a scalable and secure application.",
       "title-datalake-aws": "Introduction to Designing Data Lakes on AWS",
       "text-datalake-aws": "It's about the diferent services for processing data, doing data lakes with s3, queries with athena and using serverless hadoop clusters."
+    },
+    "projects" : {
+      "title": "Projects"
     }
   }
 }

@@ -21,6 +21,7 @@ module.exports = {
     ],
     'rules': {
         '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/no-inferrable-types': 'off',
         '@typescript-eslint/no-empty-function': 'off',
         'react/react-in-jsx-scope': 'off',
         'indent': [
