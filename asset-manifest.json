@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.85fedeab.css",
+    "main.js": "/static/js/main.2a110682.js",
+    "static/media/iJAYES_webp (Imagen WEBP, 1920 × 1080 píxeles) - Escalado.jpg": "/static/media/iJAYES_webp (Imagen WEBP, 1920 × 1080 píxeles) - Escalado.61d5e6763168576a035a.jpg",
+    "static/media/programming-code-colorful.jpg": "/static/media/programming-code-colorful.ef0986ff83feeec3690c.jpg",
+    "static/media/project-wallpaper-1920x1200.jpg": "/static/media/project-wallpaper-1920x1200.69363ab1079948568766.jpg",
+    "static/media/Roboto-Medium.ttf": "/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/Emberly-Bold.ttf": "/static/media/Emberly-Bold.25b3a564c339a5ec8006.ttf",
+    "static/media/flutter.jpg": "/static/media/flutter.47f14fb8dea1bedfbe41.jpg",
+    "static/media/Iphone-react-native.jpg": "/static/media/Iphone-react-native.908172447d09151b7ad8.jpg",
+    "static/media/mern.png": "/static/media/mern.2d3d191886feb7605290.png",
+    "static/media/jpg": "/static/media/0e055bd6fc948f460fe50aa193ac36e6.b3251088de17beb8da51.jpg",
+    "static/media/teral.jpg": "/static/media/teral.bc23b53ed01e58eee037.jpg",
+    "static/media/wild-world.otf": "/static/media/wild-world.ad49c6992312da43d9b4.otf",
+    "static/media/bLogos.png": "/static/media/bLogos.e91c599bb6614204a6bf.png",
+    "index.html": "/index.html",
+    "main.85fedeab.css.map": "/static/css/main.85fedeab.css.map",
+    "main.2a110682.js.map": "/static/js/main.2a110682.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85fedeab.css",
+    "static/js/main.2a110682.js"
+  ]
+}
