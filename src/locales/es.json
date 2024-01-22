@@ -40,15 +40,19 @@
         "six": "mongodb, postgresql, redis, dynamodb y firebase.",
         "seven": "Tambien he desarrollado con los siguientes servicios de aws",
         "eight": "cognito para la autentificacion, s3 para almacenamiento, lambda para funciones serverless y api gateway para el manejo de apis."
-      },
+      }
+    },
       "certifications": {
         "title-meta": "Meta Frontend Developer",
-        "text-meta": "This certificate garanties that I have the essential skills for frontend, like writing semantic html, css and javascript, using git for version control, unitary tests and React.",
+        "text-meta": "Este certificado garantiza que tengo los conocimientos esenciales para el desarrollo frontend, Como html, css y javascript, usar git para control de versiones, test unitarios y React.",
         "title-arch-aws": "Architecting solutions on AWS",
-        "text-arch-aws": "These course centers around aws, and how to use the diferent services to build a scalable and secure application.",
+        "text-arch-aws": "Este curso se enfoca en aws y como usar sus servicios para crear una aplicacion segura y escalable.",
         "title-datalake-aws": "Introduction to Designing Data Lakes on AWS",
-        "text-datalake-aws": "It's about the diferent services for processing data, doing data lakes with s3, queries with athena and using serverless hadoop clusters."
-      }
+        "text-datalake-aws": "Se centra en los diferentes servicios para data science, hostear data lakes en s3, hacer queries con athena y usar clusters serverless de hadoop."
+    },
+    "projects" : {
+      "title": "Proyectos",
+      "title-teral": "Teral, Aplicacion mobil y microservicios"
     }
   }
 }

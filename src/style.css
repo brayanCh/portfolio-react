@@ -808,7 +808,7 @@ background-color: #222;
 #projects-container {
   position: relative;
   z-index: 10;
-  height: 180vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -871,6 +871,36 @@ background-color: #222;
   font-size: 25px;
   margin: 0px;
   margin-bottom: 10px;
+}
+
+/* contact section */
+
+#contact-me-section {
+  position: relative;
+  z-index: 10;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #111;
+}
+.content-contact-me {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+
+.text-contact-me p {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 40px;
 }
 
 @keyframes moving {

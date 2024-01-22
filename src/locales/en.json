@@ -51,7 +51,12 @@
       "text-datalake-aws": "It's about the diferent services for processing data, doing data lakes with s3, queries with athena and using serverless hadoop clusters."
     },
     "projects" : {
-      "title": "Projects"
+      "title": "Projects",
+      "title-teral": "Teral, Mobile app y microservices"
+    },
+    "contact-me" : {
+      "title": "Contact me",
+      "text": "If you want to contact me, you can use the following links."
     }
   }
 }

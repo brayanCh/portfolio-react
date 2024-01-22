@@ -1,6 +1,6 @@
-import {useCallback, useEffect} from 'react';
 import {useTranslation} from 'react-i18next';
 import ProjectCard from '../components/ProjectCard';
+import teralImg from '../media/teral.jpg';
 
 export interface IProject {
   title: string;
@@ -9,32 +9,20 @@ export interface IProject {
   link: string;
 }
 
-const listOfProjects: Array<IProject> = [
-  {
-    title: 'dddd',
-    img: 'https://i.imgur.com/5X9Z3ZV.png',
-    img_two: 'dddd',
-    link: '/hhh/'
-  },
-  {
-    title: 'Teral, Aplicacion mobil y microservicios',
-    img: 'https://i.imgur.com/5X9Z3ZV.png',
-    img_two: 'dddd',
-    link: '/hhh/'
-  },
-  {
-    title: 'Teral, Aplicacion mobil y microservicios',
-    img: 'https://i.imgur.com/5X9Z3ZV.png',
-    img_two: 'dddd',
-    link: '/hhh/'
-  }
-];
 
 const Projects = () => {
 
   //@ts-ignore
   const { t } = useTranslation();
 
+  const listOfProjects: Array<IProject> = [
+    {
+      title: t('projects.title-teral'),
+      img: teralImg,
+      img_two: 'dddd',
+      link: '/hhh/'
+    },
+  ];
   return (
     <div id="projects-container">
       <div className="project-content">
