@@ -1,4 +1,6 @@
 import logoSrc from '../../media/bLogos.png';
+import linkedinSrc from '../../media/linkedin.png';
+import githubSrc from '../../media/github.png';
 import menuSrc from '../../media/menu-black.png';
 import { useNavigate } from 'react-router-dom';
 import {useCallback, useEffect, useState} from 'react';
@@ -61,13 +63,31 @@ const Navbar = () => {
 
   return (
     <nav className={!isOnTop ? 'navbar nv-top shadow' : 'navbar'} >
-      <img
-        alt="logo"
-        onClick={() => pasar('/portfolio-react')}
-        src={logoSrc}
-        className="nav-img"
-        style={{ filter: isOnTop ? 'invert(0)' : 'invert(1)' }}
-      />
+      <div className='left-navbar'>
+        <img
+          alt="logo"
+          onClick={() => pasar('/portfolio-react')}
+          src={logoSrc}
+          className="nav-img"
+          style={{ filter: isOnTop ? 'invert(0)' : 'invert(1)' }}
+        />
+        <a href="https://www.linkedin.com/in/brayan-chavarro-68118a226/">
+          <img
+            alt="linkedin link"
+            src={linkedinSrc}
+            className="nav-img sm"
+            style={{ filter: isOnTop ? 'invert(0)' : 'invert(1)' }}
+          />
+        </a>
+        <a href="https://github.com/brayanCh/">
+          <img
+            alt="github link"
+            src={githubSrc}
+            className="nav-img sm"
+            style={{ filter: isOnTop ? 'invert(0)' : 'invert(1)' }}
+          />
+        </a>
+      </div>
       {isMobile ?
         (
           <>
@@ -79,11 +99,11 @@ const Navbar = () => {
               src={menuSrc}
             />
             { openDrawer && 
-                        <MobileMenu 
-                          languageSection={modalLanguagesOpen}
-                          close={() => setOpenDrawer(false)}
-                          setModalLanguagesOpen={setModalLanguagesOpen}
-                        /> 
+            <MobileMenu 
+              languageSection={modalLanguagesOpen}
+              close={() => setOpenDrawer(false)}
+              setModalLanguagesOpen={setModalLanguagesOpen}
+            /> 
             }
           </>
         )

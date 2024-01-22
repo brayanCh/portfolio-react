@@ -1,11 +1,10 @@
 import { useCallback, useState } from 'react';
 import arrow from '../media/LtoR.png';
 import { useTranslation } from 'react-i18next';
-import {ParallaxLayer} from '@react-spring/parallax';
 
 interface CarouselProps {
     images: { 
-        url: any;
+        url: string;
         paragraph: string;
         title: string;
     }[];
@@ -38,7 +37,7 @@ const Carousel = ({images}: CarouselProps) => {
           </p>
         </div>
       ))}
-      <button className='right-slide left' onClick={() => handleSwipe(true)}>
+      <button className='right-slide left-img' onClick={() => handleSwipe(true)}>
         <img src={arrow} className="inverted-img arrow-img" alt="left"  />
       </button>
       <button className='right-slide' onClick={() => handleSwipe(false)}>
