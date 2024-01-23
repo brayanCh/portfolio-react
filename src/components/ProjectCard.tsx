@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import {IProject} from '../pages/Projects';
+import {IProject} from '../sections/Projects';
 
 const ProjectCard = ({ project }: { project: IProject }) => {
   return (
