@@ -10,6 +10,7 @@ import SecondBackendExperience from '../sections/SecondBackendExperience';
 import Certifications from '../sections/Certifications';
 import Projects from '../sections/Projects';
 import Carousel from '../components/Carousel';
+import Navbar from '../components/bar';
 
 const Home = () : React.JSX.Element => {
 
@@ -38,6 +39,7 @@ const Home = () : React.JSX.Element => {
 
   return (
     <>
+      <Navbar /> 
       <Carousel images={images}/>
       <FirstFrontendExperience />
       <SecondFrontendExperience />

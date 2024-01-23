@@ -8,7 +8,11 @@ import NavItem from './NavItem';
 import MobileMenu from './NavMenu';
 import {useTranslation} from 'react-i18next';
 
-const Navbar = () => {
+interface NavbarProps {
+  isNotInHome?: boolean;
+}
+
+const Navbar = ({isNotInHome} : NavbarProps) => {
 
   const navigate = useNavigate();
 
@@ -111,21 +115,25 @@ const Navbar = () => {
         (
 
           <div className="item-container"> 
-            <NavItem
-              text={t('navbar.projects')}
-              method={() => scrollTo('projects-container', true)}
-              isOnTop={isOnTop}
-            />
-            <NavItem
-              text={t('navbar.certifications')}
-              method={() => scrollTo('certification-container')}
-              isOnTop={isOnTop}
-            />
-            <NavItem
-              text={t('navbar.skills')}
-              method={() => scrollTo('first-frontend-sec')}
-              isOnTop={isOnTop}
-            />
+            { !isNotInHome &&
+            <>
+              <NavItem
+                text={t('navbar.projects')}
+                method={() => scrollTo('projects-container', true)}
+                isOnTop={isOnTop}
+              />
+              <NavItem
+                text={t('navbar.certifications')}
+                method={() => scrollTo('certification-container')}
+                isOnTop={isOnTop}
+              />
+              <NavItem
+                text={t('navbar.skills')}
+                method={() => scrollTo('first-frontend-sec')}
+                isOnTop={isOnTop}
+              />
+            </>
+            }
             <NavItem
               text={t('navbar.change_lang')}
               method={() => setModalLanguagesOpen(true)}

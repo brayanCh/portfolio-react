@@ -5,7 +5,6 @@ import teralImg from '../media/teral.jpg';
 export interface IProject {
   title: string;
   img: string;
-  img_two: string;
   link: string;
 }
 
@@ -19,10 +18,10 @@ const Projects = () => {
     {
       title: t('projects.title-teral'),
       img: teralImg,
-      img_two: 'dddd',
-      link: '/hhh/'
+      link: '/portfolio-react/project-teral/'
     },
   ];
+
   return (
     <div id="projects-container">
       <div className="project-content">

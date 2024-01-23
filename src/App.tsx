@@ -3,16 +3,16 @@ import Navbar from './components/bar';
 
 // pages 
 import Home from './pages/Home';
+import TeralArticle from './pages/TeralArticle';
 
 
 const App = () => {
     
   return (
     <Router>
-      <Navbar /> 
       <Routes>
         <Route path="/portfolio-react" element={<Home />}/>
-        <Route path="*" element={<Home />}/>
+        <Route path="/portfolio-react/project-teral" element={<TeralArticle />}/>
       </Routes>
     </Router>
   );
