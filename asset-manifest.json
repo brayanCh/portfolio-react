@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.31427617.css",
+    "main.css": "/portfolio-react/static/css/main.97be8b0d.css",
     "main.js": "/portfolio-react/static/js/main.d8457a0e.js",
     "static/media/lambda.png": "/portfolio-react/static/media/lambda.fd152375441eaa21f9cb.png",
     "static/media/iJAYES_webp (Imagen WEBP, 1920 × 1080 píxeles) - Escalado.jpg": "/portfolio-react/static/media/iJAYES_webp (Imagen WEBP, 1920 × 1080 píxeles) - Escalado.61d5e6763168576a035a.jpg",
@@ -17,11 +17,11 @@
     "static/media/wild-world.otf": "/portfolio-react/static/media/wild-world.ad49c6992312da43d9b4.otf",
     "static/media/bLogos.png": "/portfolio-react/static/media/bLogos.e91c599bb6614204a6bf.png",
     "index.html": "/portfolio-react/index.html",
-    "main.31427617.css.map": "/portfolio-react/static/css/main.31427617.css.map",
+    "main.97be8b0d.css.map": "/portfolio-react/static/css/main.97be8b0d.css.map",
     "main.d8457a0e.js.map": "/portfolio-react/static/js/main.d8457a0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.31427617.css",
+    "static/css/main.97be8b0d.css",
     "static/js/main.d8457a0e.js"
   ]
 }
