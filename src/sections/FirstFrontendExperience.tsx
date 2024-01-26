@@ -21,10 +21,10 @@ const ParallaxSection = () => {
           return;
         }
         if (section) {
-          if (positionOnScreen > 2.5) {
+          if (positionOnScreen > 4) {
             section.style.transform = 'translateY(0)';
           } else {
-            section.style.transform = `translateY(${(positionOnScreen - 2) * 100}%)`;
+            section.style.transform = `translateY(${(positionOnScreen - 2) * 40}%)`;
           }
         }
         return;

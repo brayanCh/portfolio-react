@@ -9,7 +9,6 @@ const CertificationCard = ({ title, description, link }: CertificationCardProps)
 
   return (
     <a className="cert-card" href={link}>
-      <div className='cert-full' />
       <h5 className="cert-title">{title}</h5>
       <p className="cert-text">{description}</p>
     </a>

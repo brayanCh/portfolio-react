@@ -28,10 +28,10 @@ const Certifications = () => {
   const scrollElem = useCallback((id: string, positionOnScreen: number, fromTop: boolean) => {
     const section = document.getElementById(id);
     if (section) {
-      if (positionOnScreen > 8) {
+      if (positionOnScreen > (window.innerWidth < 1080 ? 10 : 8)) {
         section.style.transform = 'translateY(0)';
       } else {
-        section.style.transform = `translateY(${((fromTop ? 1 : -1 ) * (positionOnScreen - 7)) * 80}%)`;
+        section.style.transform = `translateY(${((fromTop ? 1 : -1 ) * (positionOnScreen - (window.innerWidth < 1080 ? 9 : 7))) * 80}%)`;
       }
     }
   }, []);
@@ -39,7 +39,7 @@ const Certifications = () => {
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const positionOnScreen: number = window.scrollY/window.innerHeight;
-      if (positionOnScreen < 6 ) {
+      if (positionOnScreen < (window.innerWidth < 1080 ? 8 : 6)) {
         return;
       }
       scrollElem('cert-bg1', positionOnScreen, false);

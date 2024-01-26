@@ -1,22 +1,27 @@
-import {useEffect, useState} from 'react';
+import {useCallback, useEffect, useState} from 'react';
 import { useTranslation } from 'react-i18next';
 import flutterImage from '../media/flutter.jpg';
 
 const SecondFrontendExperience = () => {
 
-  const [isMobile] = useState(window.innerWidth < 1080);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1080);
   //@ts-ignore
   const { t } = useTranslation();
+
+  const checkMobile = useCallback(() : void => {
+    const width = window.innerWidth;
+    setIsMobile(width < 1080);
+  }, []);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
 
       const positionOnScreen: number = window.scrollY/window.innerHeight;
       const section = document.getElementById('second-frontend-sec');
+      console.log(positionOnScreen, 'positionOnScreen');
 
       if (window.innerWidth < 1080) {
         if ((positionOnScreen < 3 || positionOnScreen > 5) && section) {
-        //console.log('dont move');
           section.style.transform = 'translateY(0)';
           return;
         }
@@ -34,6 +39,11 @@ const SecondFrontendExperience = () => {
         section.style.transform = `translateY(${(positionOnScreen - 2) * 90}%)`;
       }
     });
+
+    window.addEventListener('resize', checkMobile);
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+    };
   });
 
   return (

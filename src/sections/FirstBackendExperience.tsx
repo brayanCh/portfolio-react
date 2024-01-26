@@ -1,46 +1,59 @@
-import {useEffect, useState} from 'react';
+import {useCallback, useEffect, useState} from 'react';
 import { useTranslation } from 'react-i18next';
 import mernImage from '../media/mern.png';
 
 const FirstBackendExperience = () => {
 
-  const [isMobile] = useState(window.innerWidth < 1080);
+  const [isMobile,setIsMobile] = useState(window.innerWidth < 1080);
   //@ts-ignore
   const { t } = useTranslation();
 
+  const checkMobile = useCallback(() : void => {
+    const width = window.innerWidth;
+    setIsMobile(width < 1080);
+  }, []);
+
+  const scrollCallback = useCallback(() => {
+    const positionOnScreen: number = window.scrollY/window.innerHeight;
+
+    if (isMobile) {
+      if (positionOnScreen < 4) {
+        return;
+      }
+      const mernImage = document.getElementById('mern-img');
+      if (mernImage) {
+        if (positionOnScreen > 6) {
+          mernImage.style.transform = 'translateY(0)';
+        } else {
+          mernImage.style.transform = `translateY(${(positionOnScreen - 4) * 100}%)`;
+        }
+      }
+      const firstBackendText = document.getElementById('first-backend-text');
+      if (positionOnScreen < 5) {
+        return;
+      }
+      if (firstBackendText) {
+        firstBackendText.style.transform = `translateY(${(positionOnScreen - 5) * 60}%)`;
+      }
+      return;
+    }
+    if (positionOnScreen < 3) {
+      return;
+    }
+    const section = document.getElementById('first-backend-sec');
+    if (section) {
+      section.style.transform = `translateY(${(positionOnScreen - 3) * 70}%)`;
+    }
+  }, [isMobile]);
+
+
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener('scroll',scrollCallback);
 
-      const positionOnScreen: number = window.scrollY/window.innerHeight;
-
-
-      console.log('positionOnScreen', positionOnScreen);
-      console.log('move', (positionOnScreen - 3.2) * 100);
-      if (window.innerWidth < 1080) {
-        if (positionOnScreen < 3.6) {
-          return;
-        }
-        const mernImage = document.getElementById('mern-img');
-        if (mernImage) {
-          mernImage.style.transform = `translateY(${(positionOnScreen - 3.6) * 100}%)`;
-        }
-        const firstBackendText = document.getElementById('first-backend-text');
-        if (positionOnScreen < 4.6) {
-          return;
-        }
-        if (firstBackendText) {
-          firstBackendText.style.transform = `translateY(${(positionOnScreen - 4.6) * 60}%)`;
-        }
-        return;
-      }
-      if (positionOnScreen < 3) {
-        return;
-      }
-      const section = document.getElementById('first-backend-sec');
-      if (section) {
-        section.style.transform = `translateY(${(positionOnScreen - 3) * 70}%)`;
-      }
-    });
+    window.addEventListener('resize', checkMobile);
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+    };
   });
 
   return (

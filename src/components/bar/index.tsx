@@ -36,7 +36,7 @@ const Navbar = ({isNotInHome} : NavbarProps) => {
   // check if the screen is mobile
   const checkMobile = useCallback(() : void => {
     const width = window.innerWidth;
-    setIsMobile(width < 1020);
+    setIsMobile(width < 1080);
   }, []);
 
   useEffect(() => {
