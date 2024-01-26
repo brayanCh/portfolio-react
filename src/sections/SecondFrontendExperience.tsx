@@ -21,8 +21,6 @@ const SecondFrontendExperience = () => {
           return;
         }
         if (section) {
-          console.log('move', positionOnScreen);
-          console.log('move', (positionOnScreen - 3) * 90);
           section.style.transform = `translateY(${(positionOnScreen - 3) * 90}%)`;
           return;
         }

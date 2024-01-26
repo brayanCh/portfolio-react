@@ -13,18 +13,27 @@ const FirstBackendExperience = () => {
 
       const positionOnScreen: number = window.scrollY/window.innerHeight;
 
-      if (positionOnScreen < 3) {
-        return;
-      }
+
+      console.log('positionOnScreen', positionOnScreen);
+      console.log('move', (positionOnScreen - 3.2) * 100);
       if (window.innerWidth < 1080) {
+        if (positionOnScreen < 3.6) {
+          return;
+        }
         const mernImage = document.getElementById('mern-img');
         if (mernImage) {
-          mernImage.style.transform = `translateY(${(positionOnScreen - 4) * 50}%)`;
+          mernImage.style.transform = `translateY(${(positionOnScreen - 3.6) * 100}%)`;
         }
         const firstBackendText = document.getElementById('first-backend-text');
-        if (firstBackendText) {
-          firstBackendText.style.transform = `translateY(${(positionOnScreen * 0.4) * 50}%)`;
+        if (positionOnScreen < 4.6) {
+          return;
         }
+        if (firstBackendText) {
+          firstBackendText.style.transform = `translateY(${(positionOnScreen - 4.6) * 60}%)`;
+        }
+        return;
+      }
+      if (positionOnScreen < 3) {
         return;
       }
       const section = document.getElementById('first-backend-sec');

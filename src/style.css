@@ -807,4 +807,8 @@ code {
   #first-backend-sec div {
     height: 100vh;
   }
+
+  #first-backend-text {
+    z-index: 1;
+  }
 }
