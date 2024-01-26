@@ -485,6 +485,8 @@ code {
   align-items: center;
   background-color: #111;
 }
+.img-fluid {
+}
 
 .text-frontend {
   font-family: 'Roboto';
@@ -494,6 +496,9 @@ code {
   width: 600px;
   background-color: #f000;
   color: #222;
+}
+
+.first-sec {
 }
 
 .first-sec div {
@@ -760,11 +765,46 @@ code {
   margin-bottom: 20px;
   overflow: hidden;
 }
-/*@media only screen and (max-width: 1020px) {*/
-/*  .arrow-img {*/
-/*    width: 150px;*/
-/*  }*/
-/*  .right-slide {*/
-/*    width: 150px;*/
-/*  }*/
-/*}*/
+@media only screen and (max-width: 1550px) {
+  .text-frontend {
+    font-size: 35px;
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .text-frontend {
+    width: 400px;
+  }
+  .img-fluid {
+    width: 200px;
+  }
+  .img-flutter {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .container-fluid {
+    flex-direction: column;
+    height: auto;
+    align-items: start;
+    background-color: #f000;
+  }
+  .container-fluid div {
+    width: 100%;
+    max-width: 100%;
+  }
+  .first-text-mobile {
+    height: 100vh;
+  }
+  .img-fluid {
+    margin-bottom: 100px;
+  }
+  .second-sec-text {
+    height: 100vh;
+  }
+  #first-backend-sec div {
+    height: 100vh;
+  }
+}

@@ -20,7 +20,7 @@ const Navbar = ({isNotInHome} : NavbarProps) => {
   const {t, i18n} = useTranslation();
   const [isOnTop, setIsOnTop] = useState<boolean>(true);
   const [modalLanguagesOpen, setModalLanguagesOpen] = useState<boolean>(false);
-  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 600);
+  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 1080);
   const [openDrawer, setOpenDrawer] = useState<boolean>(false);
 
   const pasar = useCallback((link: string) : void => {

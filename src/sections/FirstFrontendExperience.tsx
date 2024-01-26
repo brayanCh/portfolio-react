@@ -9,13 +9,36 @@ const ParallaxSection = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
+
       const positionOnScreen: number = window.scrollY/window.innerHeight;
-      if (positionOnScreen < 1 ) {
+      const section = document.getElementById('first-frontend-sec');
+
+      if (window.innerWidth < 1080) {
+        if (positionOnScreen < 2) {
+          if (section) {
+            section.style.transform = 'translateY(0)';
+          }
+          return;
+        }
+        if (section) {
+          if (positionOnScreen > 2.5) {
+            section.style.transform = 'translateY(0)';
+          } else {
+            section.style.transform = `translateY(${(positionOnScreen - 2) * 100}%)`;
+          }
+        }
         return;
       }
-      const section = document.getElementById('first-frontend-sec');
+
+
+      if (positionOnScreen < 1) {
+        if (section) {
+          section.style.transform = 'translateY(0)';
+        }
+        return;
+      }
       if (section) {
-        if (positionOnScreen > 3) {
+        if (positionOnScreen > 4) {
           section.style.transform = 'translateY(0)';
         } else {
           section.style.transform = `translateY(${(positionOnScreen - 1) * 100}%)`;
@@ -26,13 +49,13 @@ const ParallaxSection = () => {
 
   return (
     <div className='container-fluid first-sec' id="first-frontend-sec" style={{zIndex: 0}}>
-      <div className="black-square-cont" style={{backgroundColor: '#fff0'}}>
+      <div className="black-square-cont first-text-mobile" style={{backgroundColor: '#f9f0'}}>
         <p className="text-frontend">
           {`${t('parallax.frontend.first')} `}
           <em className="text-frontend-em">{`${t('parallax.frontend.second')} `}</em>
         </p>
       </div>
-      <div className="black-square-cont" style={{backgroundColor: '#fff0'}}>
+      <div className="black-square-cont" style={{backgroundColor: '#ff00'}}>
         <img src={mobileReactNative} alt="React Native" className="img-fluid" />
       </div>
     </div>
