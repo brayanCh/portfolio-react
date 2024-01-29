@@ -45,7 +45,10 @@ const ParallaxSection = () => {
         }
       }
     });
-  });
+    return () => {
+      window.removeEventListener('scroll', () => {});
+    };
+  }, []);
 
   return (
     <div className='container-fluid first-sec' id="first-frontend-sec" style={{zIndex: 0}}>

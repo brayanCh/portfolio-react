@@ -497,6 +497,7 @@ code {
 }
 
 .first-sec {
+  background-color: #ffffff;
 }
 
 .first-sec div {
@@ -755,12 +756,14 @@ code {
 .teral-img-1 {
   width: 200px;
   border-radius: 20px;
+  max-width: 90%;
   margin-bottom: 20px;
   overflow: hidden;
 }
 
 .teral-img-2 {
   width: 400px;
+  max-width: 90%;
   margin-bottom: 20px;
   overflow: hidden;
 }
@@ -834,5 +837,9 @@ code {
   #projects-container {
     height: auto;
     min-height: 100%;
+  }
+
+  .teral-article {
+    width: 90%;
   }
 }
