@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.97be8b0d.css",
-    "main.js": "/portfolio-react/static/js/main.d8457a0e.js",
+    "main.css": "/portfolio-react/static/css/main.8b7331b3.css",
+    "main.js": "/portfolio-react/static/js/main.4bffa4c1.js",
     "static/media/lambda.png": "/portfolio-react/static/media/lambda.fd152375441eaa21f9cb.png",
     "static/media/iJAYES_webp (Imagen WEBP, 1920 × 1080 píxeles) - Escalado.jpg": "/portfolio-react/static/media/iJAYES_webp (Imagen WEBP, 1920 × 1080 píxeles) - Escalado.61d5e6763168576a035a.jpg",
     "static/media/programming-code-colorful.jpg": "/portfolio-react/static/media/programming-code-colorful.ef0986ff83feeec3690c.jpg",
@@ -17,11 +17,11 @@
     "static/media/wild-world.otf": "/portfolio-react/static/media/wild-world.ad49c6992312da43d9b4.otf",
     "static/media/bLogos.png": "/portfolio-react/static/media/bLogos.e91c599bb6614204a6bf.png",
     "index.html": "/portfolio-react/index.html",
-    "main.97be8b0d.css.map": "/portfolio-react/static/css/main.97be8b0d.css.map",
-    "main.d8457a0e.js.map": "/portfolio-react/static/js/main.d8457a0e.js.map"
+    "main.8b7331b3.css.map": "/portfolio-react/static/css/main.8b7331b3.css.map",
+    "main.4bffa4c1.js.map": "/portfolio-react/static/js/main.4bffa4c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.97be8b0d.css",
-    "static/js/main.d8457a0e.js"
+    "static/css/main.8b7331b3.css",
+    "static/js/main.4bffa4c1.js"
   ]
 }
