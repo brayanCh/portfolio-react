@@ -52,11 +52,9 @@
     },
     "projects" : {
       "title": "Projects",
-      "title-teral": "Teral, Mobile app y microservices"
-    },
-    "contact-me" : {
-      "title": "Contact me",
-      "text": "If you want to contact me, you can use the following links."
+      "title-teral": "Teral, Mobile app and microservices",
+      "title-graphql-rust": "GraphQL api written in Rust, using mongodb as database",
+      "title-flutter-music-player": "Music player written in flutter"
     }
   }
 }

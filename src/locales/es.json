@@ -52,7 +52,9 @@
     },
     "projects" : {
       "title": "Proyectos",
-      "title-teral": "Teral, Aplicacion mobil y microservicios"
+      "title-teral": "Teral, Aplicacion mobil y microservicios",
+      "title-graphql-rust": "GraphQL api escrita en Rust, usando mongodb como base de datos",
+      "title-flutter-music-player": "Reproductor de musica escrito en flutter"
     }
   }
 }

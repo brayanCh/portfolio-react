@@ -1,6 +1,8 @@
 import {useTranslation} from 'react-i18next';
 import ProjectCard from '../components/ProjectCard';
 import teralImg from '../media/teral.jpg';
+import graphqlImg from '../media/graphql.png';
+import musicNoteImg from '../media/music_note.jpg';
 
 export interface IProject {
   title: string;
@@ -19,6 +21,16 @@ const Projects = () => {
       title: t('projects.title-teral'),
       img: teralImg,
       link: '/portfolio-react/project-teral/'
+    },
+    {
+      title: t('projects.title-graphql-rust'),
+      img: graphqlImg,
+      link: '/portfolio-react/graphql-rust/'
+    },
+    {
+      title: t('projects.title-flutter-music-player'),
+      img: musicNoteImg,
+      link: '/portfolio-react/flutter-music-player/'
     },
   ];
 
