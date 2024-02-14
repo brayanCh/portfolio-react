@@ -33,7 +33,7 @@ const TeralArticle = () => {
         generation of thumbnails with ffmpeg, and handled the security of the apis with
         api gateway and aws cognito.
           </p>
-          <a href="https://play.google.com/store/apps/details?id=com.teralmedicine&hl=es_CO&gl=US">Here is a link to the play store page of teral</a>
+          <a href="https://play.google.com/store/apps/details?id=com.teralmedicine&hl=es_CO&gl=US" target="_blank" rel="noopener noreferrer">Here is a link to the play store page of teral</a>
         </div>
       </div>
     </>
