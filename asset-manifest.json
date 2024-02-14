@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.503dcf27.css",
-    "main.js": "/portfolio-react/static/js/main.4bffa4c1.js",
+    "main.css": "/portfolio-react/static/css/main.5e392a4b.css",
+    "main.js": "/portfolio-react/static/js/main.4adbaf7b.js",
     "static/media/lambda.png": "/portfolio-react/static/media/lambda.fd152375441eaa21f9cb.png",
     "static/media/iJAYES_webp (Imagen WEBP, 1920 × 1080 píxeles) - Escalado.jpg": "/portfolio-react/static/media/iJAYES_webp (Imagen WEBP, 1920 × 1080 píxeles) - Escalado.61d5e6763168576a035a.jpg",
     "static/media/programming-code-colorful.jpg": "/portfolio-react/static/media/programming-code-colorful.ef0986ff83feeec3690c.jpg",
     "static/media/project-wallpaper-1920x1200.jpg": "/portfolio-react/static/media/project-wallpaper-1920x1200.69363ab1079948568766.jpg",
     "static/media/app-screenshot.png": "/portfolio-react/static/media/app-screenshot.975de227731ce92bf645.png",
     "static/media/Roboto-Medium.ttf": "/portfolio-react/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/rust-mascot.png": "/portfolio-react/static/media/rust-mascot.1841532813ddfaf2daf5.png",
+    "static/media/app-capture.png": "/portfolio-react/static/media/app-capture.27f38d9e63ffd6eb9523.png",
     "static/media/Emberly-Bold.ttf": "/portfolio-react/static/media/Emberly-Bold.25b3a564c339a5ec8006.ttf",
     "static/media/flutter.jpg": "/portfolio-react/static/media/flutter.47f14fb8dea1bedfbe41.jpg",
     "static/media/Iphone-react-native.jpg": "/portfolio-react/static/media/Iphone-react-native.908172447d09151b7ad8.jpg",
     "static/media/mern.png": "/portfolio-react/static/media/mern.2d3d191886feb7605290.png",
     "static/media/jpg": "/portfolio-react/static/media/0e055bd6fc948f460fe50aa193ac36e6.b3251088de17beb8da51.jpg",
     "static/media/teral.jpg": "/portfolio-react/static/media/teral.bc23b53ed01e58eee037.jpg",
+    "static/media/music_note.jpg": "/portfolio-react/static/media/music_note.a1c07719e5db0fb8e772.jpg",
     "static/media/wild-world.otf": "/portfolio-react/static/media/wild-world.ad49c6992312da43d9b4.otf",
     "static/media/bLogos.png": "/portfolio-react/static/media/bLogos.e91c599bb6614204a6bf.png",
+    "static/media/graphql.png": "/portfolio-react/static/media/graphql.99fa26ddd46193526f0e.png",
+    "static/media/mongodb.png": "/portfolio-react/static/media/mongodb.2178943141ba7e7fae4e.png",
     "index.html": "/portfolio-react/index.html",
-    "main.503dcf27.css.map": "/portfolio-react/static/css/main.503dcf27.css.map",
-    "main.4bffa4c1.js.map": "/portfolio-react/static/js/main.4bffa4c1.js.map"
+    "main.5e392a4b.css.map": "/portfolio-react/static/css/main.5e392a4b.css.map",
+    "main.4adbaf7b.js.map": "/portfolio-react/static/js/main.4adbaf7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.503dcf27.css",
-    "static/js/main.4bffa4c1.js"
+    "static/css/main.5e392a4b.css",
+    "static/js/main.4adbaf7b.js"
   ]
 }
